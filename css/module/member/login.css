@@ -1,0 +1,77 @@
+
+.loginwrap {opacity:0;margin-top:10px;}
+.loginwrap .login {position: relative;padding: 129px 20px 47px;color: #2e2e2e;background:rgba(255,255,255,0.4);width: 460px;margin: 0 auto;box-shadow: 0 3px 12px rgba(142,142,142,0.58);box-sizing: border-box;border-radius:6px}
+.loginwrap .login > h3 {position: absolute;display: block;left: 0;top: 0;width: 460px;height: 80px;box-sizing: border-box;padding: 20px;text-align: center;background:#545454 url('/_images/bg_loginh3.gif') 0 0 no-repeat;line-height: 45px;color: #cacaca;font-weight: 400;letter-spacing: 2px;font-size: 14px;font-family: nunito;border-top-left-radius:6px;border-top-right-radius:6px;}
+.loginwrap .login > h3 i{position: absolute;left: 26px;top: 32px;}
+.loginwrap .login > h3 i {color: #b9b9b9;font-size: 15px;}
+.loginwrap .login > h3 i:hover {left:24px;color:#fff}
+.loginwrap .login > h3 i:hover,
+.loginwrap .login > h3 i {-webkit-transition:all 0.3s;-moz-transition:all 0.3s;-o-transition:all 0.3s;transition:all 0.3s;}
+
+.loginwrap .login fieldset { position:relative; width:380px; margin:0 auto;padding-top:0px;}
+.loginwrap .login fieldset .inputline {clear:both;height:40px;}
+.loginwrap .login fieldset .inputline:first-child {padding-bottom:5px;}
+.loginwrap .login fieldset .inputline i {float:left;width:20px;line-height:32px;color:#ddd}
+.loginwrap .login fieldset .id,
+.loginwrap .login fieldset .password {float:right;overflow: hidden;display: block;width:calc(100% - 30px);margin: 0 0 2px;border-bottom: 1px solid #eee;border-radius: 2px;color: #8F8F91; }
+.loginwrap .login fieldset .id span,
+.loginwrap .login fieldset .password span { height:32px; line-height:32px; padding:0 0 0 8px; color:#c9c9c9;}
+.loginwrap .login fieldset input[type=text],
+.loginwrap .login fieldset input[type=password] { width:100%; height:28px; line-height:28px; padding:2px 0 2px 0; border:0 none; color:#8F8F91;background:transparent !important;}
+.loginwrap .login fieldset .security {  clear:both;  padding: 0 0 0 2px;margin: 10px 0;color: #b5b5b5;font-size: 12px; }
+.loginwrap .login fieldset .security:after {content:"";clear:both;display:block;}
+.loginwrap .login fieldset .security > div {float:left;text-align:left;}
+.loginwrap .login fieldset .security ul {float:right;overflow:hidden; margin:0; border:0; }
+.loginwrap .login fieldset .security ul a {color:#888;}
+.loginwrap .login fieldset .security ul li {padding:0 3px;}
+.loginwrap .login fieldset .security img {display:none; }
+.loginwrap .login fieldset .security i {    display: inline-block;font-size: 15px;color: #171717;margin-right: 12px;}
+
+.loginwrap .login fieldset > div {text-align:center;clear:both;}
+.loginwrap .login fieldset > div > a {display: inline-block;box-sizing: border-box;padding: 14px 98px;background: #d2d2d2;font-family: nunito;letter-spacing: 1px;font-weight: 500;font-size: 13px;margin-top: 47px;COLOR: #fff;}
+.loginwrap .login fieldset li {display:block; padding:0 9px 0 0px; text-align:center; }
+.loginwrap .login fieldset li a { color:#2e2e2e; }
+.loginwrap .login fieldset .link { position:relative;  padding:25px 0 0 0px; color:#757575; text-align:center;	}
+.loginwrap .login fieldset .link a { font-size:12px;color: #171717;}
+.loginwrap .login fieldset #noMemberWrap { border-top:0; margin-top:0; }
+.loginwrap .hvr-sweep-to-right:before {background: #171717}
+.loginwrap .login fieldset > div:hover > a  {color:#fff !important}
+.loginwrap input:focus {color:#171717 !important}
+
+
+/* 비회원 구매하기 */
+.nonMember {text-align:center;margin:50px 0 0 ;}
+.nonMember p {font-size:12px;}
+.nonMember a {display: inline-block;box-sizing: border-box;padding: 14px 76px;background: rgba(71, 71, 71, 0.87);font-family: nunito;letter-spacing: 1px;font-weight: 500;font-size: 12px;margin: 47px auto 12px;COLOR: #fff;border-radius: 5px;box-shadow: 0 3px 12px rgba(142,142,142,0.58);}
+
+/* 비회원 주문조회 */
+.noLogin {float: right;position: relative;padding: 129px 20px 47px;color: #2e2e2e;background: rgba(255,255,255,0.4);width: 460px;margin: 0 auto;box-shadow: 0 3px 12px rgba(142,142,142,0.58);box-sizing: border-box;border-radius: 6px;opacity: 0;margin-right: -20px;height: 436px;text-align: center;}
+.noLogin h3 {position: absolute;display: block;left: 0;top: 0;width: 460px;height: 80px;box-sizing: border-box;padding: 20px;text-align: center;background:#545454 url('/_images/bg_loginh3.gif') 0 0 no-repeat;line-height: 45px;color: #cacaca;font-weight: 400;letter-spacing: 2px;font-size: 14px;font-family: nunito;border-top-left-radius:6px;border-top-right-radius:6px;}
+.noLogin h3 i{position: absolute;left: 26px;top: 32px;}
+.noLogin h3 i {color: #b9b9b9;font-size: 15px;}
+.noLogin h3 i:hover {left:24px;color:#fff}
+.noLogin h3 i:hover,
+.noLogin h3 i {-webkit-transition:all 0.3s;-moz-transition:all 0.3s;-o-transition:all 0.3s;transition:all 0.3s;}
+.noLogin p {text-align: center;color: #b1b1b1;font-size: 12px;padding-top:23px;}
+.noLogin .ec-base-desc { width:380px; margin:0 auto; }
+.noLogin .button { margin:52px auto 0;}
+.noLogin .inputline {clear:both;height:40px;width:380px;margin:0 auto;text-align:right;}
+.noLogin .inputline:first-child {padding-bottom:5px;}
+.noLogin .inputline i {float:left;width:20px;line-height:32px;color:#ddd}
+.noLogin input[type=text],
+.noLogin input[type=password] {float:right;overflow: hidden;display: block;width:calc(100% - 39px);margin: 0 0 2px;border:0;border-bottom: 1px solid #eee;border-radius: 2px;color: #8F8F91;height:32px;line-height:32px;background:transparent !important}
+.noLogin #order_id1 {float: left;overflow: hidden;display: block;width: calc(50% - 40px);margin: 0 0px 2px 11px;border: 0;border-bottom: 1px solid #eee;border-radius: 2px;color: #8F8F91;}
+.noLogin #order_id2 {float: left;overflow: hidden;display: block;width: calc(50% - 24px);margin: 0 0 2px 17px;border: 0;border-bottom: 1px solid #eee;border-radius: 2px;color: #8F8F91;}
+.noLogin label.number {font-size:0;line-height:0;}
+
+
+/*sns 로그인 */
+.snsArea {opacity:0;clear:both;text-align:center;margin-top:20px;}
+.snsArea li { display:inline-block;margin:7px 0 0 4px; padding:0; background:none; }
+
+
+/* 비회원창 있을때 로그인 디자인 */
+.nologinwrap #contents {width:1200px;margin:0 auto;}
+.nologinwrap .loginwrap {float:left;margin-left:-20px;margin-top:0;}
+.nologinwrap .snsArea {opacity:0;padding-top:70px;}
+

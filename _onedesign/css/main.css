@@ -1,0 +1,123 @@
+#main .category > ul.top-menu .menu01:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 27px;
+    height: 27px;
+    background: url(/SkinImg/m_02.png) no-repeat center;
+   	margin-top:-3px;
+    margin-right: -13px;
+    background-size:100%;
+}
+
+#main .category > ul.top-menu .menu02:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 27px;
+    height: 27px;
+    background: url(/SkinImg/m_01.png) no-repeat center;
+    margin-top:-3px;
+    margin-right: -13px;
+    background-size:100%;
+}
+
+#main .category > ul.top-menu .menu03:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 27px;
+    height: 27px;
+    background: url(/SkinImg/m_03.png) no-repeat center;
+    margin-top:-3px;
+    margin-right: -13px;
+    background-size:100%;
+}
+
+#main .category > ul.top-menu .menu04:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 27px;
+    height: 27px;
+    background: url(/SkinImg/m_04.png) no-repeat center;
+    margin-top:-3px;
+    margin-right: -13px;
+    background-size:100%;
+}
+
+#main .category > ul.top-menu .menu05:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 27px;
+    height: 27px;
+    background: url(/SkinImg/m_05.png) no-repeat center;
+    margin-top:-3px;
+    margin-right: -13px;
+    background-size:100%;
+}
+
+
+/* 메인용 상단소스 */
+#main #header .logoArea .logo a { color: #fff;font-size: 24px;letter-spacing: -1px;font-weight: 800;display: block;font-family: montserrat;}
+#main #header .category > ul > li > a { color:#fff;font-weight:400;}
+#main #header .category > ul > li.etc.first {  padding-left: 17px;}
+#main #header .category > ul > li.etc.first:before { content: "";position: absolute;left: 9px;top: 19px;width: 1px;height: 14px;background: rgba(255, 255, 255, 0.32);}
+#main #header .category > ul > li.etc > a { font-weight:300;font-size:14px;}
+
+/******** 메인 본문 최상단 슬라이드 ********/
+.mainVisual { position:relative;overflow:hidden;width:100%;}
+.mainVisual .slider { position:relative;width:100%;height:1200px;}
+.visualLayer {  opacity:0; position: absolute;left: calc(50% - 600px);top: calc(50% );width: 1200px;text-align: center;z-index: 9;line-height: 80px;padding-bottom: 50px;-webkit-transition: all .7s;-moz-transition: all .7s;-o-transition: all .7s;transition: all .7s;}
+.visualLayer.active { opacity: 1;top: calc(50% - 66px);}
+.visualLayer.active.hide { opacity:0;top: calc(50%);}
+.visualLayer h2 { display: block;color: #fff;font-size: 75px;font-family: montserrat;font-weight: 800;letter-spacing: -4px;}
+.visualLayer span { display: block;color: #fff;font-size: 21px;font-family: montserrat;padding-top: 0px;}
+.mainVisual2 { position:relative;overflow:hidden;width:100%;}
+.mainVisual2 .slider { position:relative;width:100%;min-height:1200px;-webkit-transition: all 0.6s;-moz-transition: all 0.6s;-o-transition: all 0.6s;transition: all 0.6s;}
+
+
+
+/******* 메인 텍스트 ********/
+
+.textMain { text-align: center;padding: 50px 0 150px 0;box-sizing: border-box;display:table;width:100%;box-sizing:border-box;}
+.textMain img { margin:50px;}
+.textMain h3 { position: relative;font-size: 55px;font-family: montserrat;line-height: 65px;font-weight: 800;color: #000;letter-spacing: -2px;display: table-cell;vertical-align: middle;text-align: left;padding-top: 15px;text-transform: uppercase;padding-left: 20px;min-width:400px;}
+.textMain h3 span { display:block;}
+/*.textMain h3:after { content: "SCHEDULE OF EVENTS";position: absolute;left: 30px;top: -35px;font-size: 12px;font-weight: 500;letter-spacing: 1px;height: 20px;text-transform: none;font-family: 'Oswald',sans-serif;}*/
+.textMain p {  font-size: 18px;color: #252525;line-height: 33px;font-weight: 300;display: table-cell;text-align: left;width: 1000px;vertical-align: middle;}	
+
+
+/******** 메인 갤러리 ********/
+
+.bnGallery_wrap {  padding: 0 0 80px;min-height: 1000px;overflow:hidden;}
+.bnGallery { width:100%;margin:0 auto;display: block;font-size: 15px;line-height: 28px;font-weight: 300;font-style: normal;box-sizing:border-box;}
+.bnGallery:after { content:"";clear:both;display:block;}
+.bnGallery ul li { background-size:cover;}
+
+.bnGallery ul { display:table;width:calc(100% + 100px);margin-left:-50px; font-size:0; line-height:0; letter-spacing:0;}
+.bnGallery ul li { display:inline-block; padding:0; width:calc(50% - 100px); margin:0 50px; vertical-align:top;}
+
+/*
+.bnGallery li:after { position:absolute;bottom:-50px;left:0;font-size:14px;}
+.bnGallery li.gallery1:after { content:"유기농 밖에 모르는 사람들";}
+.bnGallery li.gallery2:after { content:"엄마는 최고를 찾는다";}
+.bnGallery li.gallery3:after { content:"행복이 시작되는 식탁";}
+*/
+
+/* 텍스트영역수정 */
+.bnGallery li div.text {margin:60px 0; width:100%; line-height:30px; padding:0 55px; box-sizing:border-box;}
+.bnGallery li div.text > h3{font-size:20px; margin-bottom:18px; font-weight:500;}
+.bnGallery li div.text > p{font-size:16px;}
+.bnGallery li.gallery3{display:block; width:100%;}
+
+
+/******** 메인타이틀 ********/
+.ec-base-product.main .title { margin-bottom:80px;}
+.ec-base-product.main { margin-bottom:100px;}
+.ec-base-product.main > .title { display:block;margin:0 0 80px;text-align:center;}
+.ec-base-product.main > .title:after { content:"";display:none;clear:both;}
+.ec-base-product.main > .title h2 {  text-align: center;font-size: 21px;letter-spacing: 0.5px;text-transform: uppercase;font-weight: 400;position: relative;display: block;}
+.ec-base-product.main > .title h2 span {  font-size: 28px;font-weight: 300;line-height: 50px;letter-spacing: -3px;}
+.ec-base-product.main > .title h4 { display: block;font-size: 12px;letter-spacing: -0.5px;line-height: 18px;padding: 11px 0 48px;font-weight: 300;color: #eda67f;}

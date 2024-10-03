@@ -1,0 +1,20 @@
+.xans-product-basketadd { position:fixed; top:50%; left:50%; z-index:1000; width:430px; margin:-175px 0 0 -225px; background:#fbfbfb; box-shadow: -1px 2px 5px 2px rgba(115,115,115,0.22); border-radius: 6px; padding-bottom:30px;}
+.xans-product-basketadd .header{border-radius:6px 6px 0 0;}
+.xans-product-basketadd .content { padding:80px 0 0; text-align:center; background:url('/_images/icon_layerCart.png') no-repeat center 20px;}
+.xans-product-basketadd .content p {padding-top:20px;}
+.xans-product-basketadd .close{padding:20px !important;}
+
+.xans-product-basketadd .ec-base-button a {
+    display: inline-block;
+    font-size: 11px;
+    padding: 5px 11px;
+    border-radius: 3px;
+    background: #e9e9e9;
+    color: #222;
+    margin: 0 2px;
+	}
+
+.xans-product-basketadd .ec-base-button a:first-child {
+    background: #9c9a9a;
+    color: #fff;
+	}

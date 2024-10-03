@@ -1,0 +1,54 @@
+/* 공통 css */
+.ec-base-tab { position:relative; }
+.ec-base-tab .menu {    margin: 15px 0;
+    font-size: 0;
+    line-height: 0;
+    letter-spacing: 0;
+    text-align: left;
+    border-bottom: 1px solid #8c8c8c;}
+.ec-base-tab .menu li { display:inline-block; vertical-align:middle; position:relative;}
+.ec-base-tab .menu li:first-child { margin-left:0; }
+.ec-base-tab .menu li a {cursor:pointer;display:block; padding:10px 15px 9px; background:#f7f7f7; color:#c2c2c2; text-align:center; font-size:13px; line-height:20px; font-weight:400; letter-spacing:0.4px;color:#999;
+-webkit-transition:all 0.2s ease-in-out; -moz-transition:all 0.2s ease-in-out; -o-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out;transition-timing-function:ease; -webkit-transition-timing-function:ease;}
+
+.ec-base-tab .menu li.selected a{    background: #fff;
+    color: #7a7a7a;
+    border-bottom: 0;
+    font-weight: 500;
+    border: 1px solid #8c8c8c;
+    border-bottom: 0;}
+.ec-base-tab .menu li.selected a:after{content:""; width:100%; height:1px; background:#fff; position:absolute; left:0; bottom:-1px;}
+
+.ec-base-tab .menu li a:hover{background:#f9f9f9; color:#8c8c8c;}
+.ec-base-tab .menu li.selected a:hover{background:#fff;}
+
+.ec-base-tab > .right { position:absolute; top:8px; right:10px; line-height:24px; color:#909090; }
+
+.ec-base-tab .menu li:hover{}
+
+
+
+  /* 밝은형 타입 */
+  .ec-base-tab.typeLight .menu li.selected a { color:#535353; background:#fff; }
+
+
+	 /* 넓이 가변형 grid(2~7) : 메뉴갯수만큼 grid 뒤의 숫자를 바꿔주세요
+	.ec-base-tab[class*="grid"] .menu { }
+	.ec-base-tab[class*="grid"] .menu li { }
+	.ec-base-tab[class*="grid"] .menu li a { }
+	.ec-base-tab[class*="grid"] .menu li.selected {  }
+	.ec-base-tab[class*="grid"] .menu li.selected a {  }
+
+	.ec-base-tab.grid2 .menu li { width:50%; }
+	.ec-base-tab.grid3 .menu li { width:33.33%; }
+	.ec-base-tab.grid4 .menu li { width:25%; }
+	.ec-base-tab.grid5 .menu li { width:20%; }
+	.ec-base-tab.grid6 .menu li { width:16.66%; }
+	.ec-base-tab.grid7 .menu li { width:14.28%; width:15% \0/; }
+	.ec-base-tab.grid7 .menu li:first-child { width:13% \0/; }
+	 */
+
+
+
+.ec-base-tab2 { position:relative; margin-bottom:20px;}
+.ec-base-tab2 li {display:inline-block;margin-right:5px;}

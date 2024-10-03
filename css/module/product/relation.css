@@ -1,0 +1,25 @@
+.xans-product-relation.ec-base-tab .menu {text-align:right; margin:120px 0 0px; }
+.xans-product-relation .relation { padding:20px 0 50px; color:#8f8f91; line-height:1.8em; }
+.xans-product-relation .relation h3 {display:none; padding:0 10px 0 9px; color:#444; font-size:12px; }
+
+.xans-product-relation .relation ul.prdList {display:table; width:100%; font-size:0; line-height:0; letter-spacing:0; }
+.xans-product-relation .relation ul.prdList li.item { display:inline-block; margin:20px 0; color:#444; vertical-align:top; *display:inline; *zoom:1; }
+.xans-product-relation .relation ul.prdList li.item .box { position:relative; display:inline-block; *display:inline; *zoom:1; vertical-align:top; padding-bottom:45px; font-size:13px; line-height:20px; width:100%;text-align:center;}
+.xans-product-relation .relation ul.prdList li.item .box strong {text-align:left; margin-bottom:6px; font-weight:400;}
+.xans-product-relation .relation ul.prdList li.item .box .salePrice strong { text-align:left; margin-bottom:6px; font-weight:400;}
+.xans-product-relation .relation ul.prdList li.item .box .strike {text-align:left; margin-bottom:6px; font-weight:400; text-decoration:line-through; }
+.xans-product-relation .relation ul.prdList li.item .thumb {width:100%; margin:0 auto 20px; text-align:center;}
+
+
+/* 진열방식 */
+.xans-product-relation .relation ul.grid2 li.item{ width:49%; margin-right:2%; }
+.xans-product-relation .relation ul.grid3 li.item{ width:32%; margin-right:2%; }
+.xans-product-relation .relation ul.grid4 li.item{ width:23.5%; margin-right:2%; }
+.xans-product-relation .relation ul.grid5 li.item{ width:18.8%; margin-right:1.5%; }
+.xans-product-relation .relation ul.grid6 li.item{ width:15.5%; margin-right:1.4%; }
+
+.xans-product-relation .relation ul.grid2 li.item:nth-child(2n){margin-right:0;}
+.xans-product-relation .relation ul.grid3 li.item:nth-child(3n){margin-right:0;}
+.xans-product-relation .relation ul.grid4 li.item:nth-child(4n){margin-right:0;}
+.xans-product-relation .relation ul.grid5 li.item:nth-child(5n){margin-right:0;}
+.xans-product-relation .relation ul.grid6 li.item:nth-child(6n){margin-right:0;}

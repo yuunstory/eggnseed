@@ -1,0 +1,16 @@
+#popup { width:620px; }
+
+.xans-product-recommmail .ec-base-box.typeProduct {display:block; margin-bottom:25px; border:1px solid #ececec; border-radius:20px; padding:30px; text-align:center;}
+.xans-product-recommmail .ec-base-box.typeProduct .thumbnail,
+.xans-product-recommmail .ec-base-box.typeProduct .information { display:block; text-align:center; margin:0 auto; padding:0;}
+.xans-product-recommmail .infomation .icon { margin:0 0 14px; }
+.xans-product-recommmail .ec-base-box.typeProduct .thumbnail{width:200px;}
+.xans-product-recommmail .ec-base-box.typeProduct .thumbnail img{max-width:200px;}
+.xans-product-recommmail .infomation h2 { font-weight:400; font-size:13px; color:#222 }
+.xans-product-recommmail .infomation .price { margin:5px 0 0; font-size:13px; color:#222;}
+
+.xans-product-recommmail table .captcha { margin:5px 0 0; }
+.xans-product-recommmail table .captcha  #tmp_image_name_str { width:80px; }
+
+.xans-product-recommmail.ec-base-layer .ec-base-button{text-align:right; padding:25px;}
+.xans-product-recommmail.ec-base-layer .ec-base-button a{display: inline-block;font-size: 11px;padding: 5px 11px;border-radius: 3px;background: #fff;color: #777;border: 1px solid #bbb;}

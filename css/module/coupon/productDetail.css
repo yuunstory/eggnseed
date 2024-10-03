@@ -1,0 +1,41 @@
+.xans-coupon-productdetail {border-top:1px solid #ececec; margin-top:50px; padding:50px 0 45px;}
+.xans-coupon-productdetail > .title { display: none;}
+.xans-coupon-productdetail > .title h3 {}
+.xans-coupon-productdetail .button{margin:70px 0 25px;text-align:center;}
+.xans-coupon-productdetail .btn_09 {    display: inline-block;font-size: 16px;padding: 25px 62px;border-radius: 5px;	}
+
+
+.xans-coupon-productdetail .couponSkinArea { text-align:center; }
+.xans-coupon-productdetail .couponSkinArea ul {font-size:0; line-height:0; letter-spacing:0;}
+.xans-coupon-productdetail .couponSkinArea ul li { position:relative; display:inline-block; text-align:center; margin: 0 7px;}
+.xans-coupon-productdetail .couponSkinArea .coupon {width:280px; line-height:18px; font-size:12px; padding:0 0 36px 0; background:#f7f7f7 !important; border-radius:11px; cursor:pointer;}
+.xans-coupon-productdetail .couponSkinArea ul li:hover{transform:translateY(-8px);}
+
+
+.xans-coupon-productdetail .couponSkinArea .coupon .title {display:block; padding:9px 0; background:#e1dfdf; font-size:13px; font-weight:500; color:#9b9797; border-radius:11px 11px 0 0;}
+.xans-coupon-productdetail .couponSkinArea .coupon .discount {display:block; text-decoration:none;}
+.xans-coupon-productdetail .couponSkinArea .coupon .discount span {font-family:Nunito,'Hind Madurai','Noto Sans Korean',AppleGothic,sans-serif; color:#7f716a; font-weight:500; font-size:20px; display:block; padding:40px 0 8px; letter-spacing:0.2px;}
+.xans-coupon-productdetail .couponSkinArea .coupon .period {font-family:Nunito,'Hind Madurai','Noto Sans Korean',AppleGothic,sans-serif; font-size:10px; letter-spacing: 0.3px; color:#c7c1c1;}
+
+.xans-coupon-productdetail .couponSkinArea .coupon_button a{position:absolute; bottom:-10px; right:0px; display: inline-block; margin-top:10px; line-height:18px; color:#fefefe; border-radius:50px; padding:14px; opacity:0.7; background:#c7afa4;}
+.xans-coupon-productdetail .couponSkinArea .coupon_button a i{font-size:24px;}
+.xans-coupon-productdetail .couponSkinArea .coupon_button a:hover{opacity:1;}
+.xans-coupon-productdetail .couponSkinArea .imgCoupon .title,
+.xans-coupon-productdetail .couponSkinArea .imgCoupon .discount,
+.xans-coupon-productdetail .couponSkinArea .imgCoupon .period,
+.xans-coupon-productdetail .couponSkinArea .imgCoupon .button { display:block; }
+.xans-coupon-productdetail .couponSkinArea .imgCoupon .detail { height:100%; }
+
+
+
+/* 쿠폰정보 레이어 */
+#dCouponDetail { overflow:hidden; position:relative; width:300px; background:rgba(77,77,77,0.8); border-radius:11px;}
+#dCouponDetail h3 {display:none; height:35px; padding:0 35px 0 19px; color:#fff; font-size:14px; line-height:35px; background:#495164; }
+#dCouponDetail h3 + a { position:absolute; right:20px; top:20px; }
+#dCouponDetail ul { padding:20px; }
+#dCouponDetail ul li { margin:7px 0 0; color:#2e2e2e; line-height:15px; color:#efefef;}
+#dCouponDetail ul li:first-child { margin-top:0; }
+#dCouponDetail ul + a { display:block; padding:10px 0; text-align:center; border-top:2px dashed #898989; -webkit-transition:all 0.2s ease-in-out; -moz-transition:all 0.2s ease-in-out; -o-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out;}
+#dCouponDetail ul + a img{display:none;}
+#dCouponDetail ul + a:after{content:"다운로드 하려면 클릭하세요."; color:#fff;}
+#dCouponDetail ul + a:hover{background:rgba(255,255,255,0.1);}

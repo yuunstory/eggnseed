@@ -1,0 +1,67 @@
+body {min-width: 400px;}
+iframe {overflow-x:hidden;overflow-y:hidden;}
+#contents {width:1200px !important;margin:0 auto;}
+
+
+/***** 아이디 찾기 ******/
+
+.findIdwrap {float:left;text-align:center;position: relative;padding: 129px 20px 47px;color: #2e2e2e;background:rgba(255,255,255,0.4);width: 460px;margin: 0 auto;box-shadow: 0 3px 12px rgba(142,142,142,0.58);box-sizing: border-box;border-radius:6px }
+.findIdwrap h3 { position: absolute;display: block;left: 0;top: 0;width: 460px;height: 80px;box-sizing: border-box;padding: 20px;text-align: center;background:#545454 url('/_images/bg_loginh3.gif') 0 0 no-repeat;line-height: 45px;color: #cacaca;font-weight: 400;letter-spacing: 2px;font-size: 14px;font-family: nunito;border-top-left-radius:6px;border-top-right-radius:6px;}
+.findId { width:360px; margin:0 auto;text-align:center; }
+.findId p { margin:7px 0 0; }
+.findId strong { display:inline-block; margin:0 0 5px; padding:0 0 0 10px; width:140px; font-weight:normal; }
+.findId .check {    margin-bottom: 30px;margin-left: 155px;color: #353535;font-size: 12px;text-align: right; }
+.findId select { width:100%; }
+.findId .ipin,
+.findId .mobileauth { position:relative; margin:10px 0 0 0; }
+.findId .ipin strong,
+.findId .mobileauth strong { width:120px; }
+.findId .ipin span,
+.findId .mobileauth span { display:block; margin:0 0 5px; padding:0 0 0 10px; color:#757575; }
+.findId .ipin a,
+.findId .mobileauth a { position:absolute; bottom:0; right:0; }
+.findId input[type=text] {width: 100%;height: 28px;line-height: 28px;padding: 4px 0 9px 0;border: 0 none;color: #8F8F91;border-bottom: 1px solid #ddd;background:transparent;}
+.findId input[type=text]:first-child {margin-bottom:8px;}
+.findId #name,
+.findId #email {  }
+.findId #ssn1,
+.findId #ssn2 { width:75px; }
+.findId #mobile1 { float:left;width:110px; margin-right:10px;}
+.findId #mobile2 { float:left;width:120px; margin-right:10px;}
+.findId #mobile3 { float:left;width:110px; }
+
+
+
+/***** 비밀번호 찾기 ******/
+
+.findPwwrap {float:right;text-align:center; position: relative;padding: 129px 20px 47px;color: #2e2e2e;background:rgba(255,255,255,0.4);width: 460px;margin: 0 auto;box-shadow: 0 3px 12px rgba(142,142,142,0.58);box-sizing: border-box;border-radius:6px  }
+.findPwwrap h3 { position: absolute;display: block;left: 0;top: 0;width: 460px;height: 80px;box-sizing: border-box;padding: 20px;text-align: center;background:#545454 url('/_images/bg_loginh3.gif') 0 0 no-repeat;line-height: 45px;color: #cacaca;font-weight: 400;letter-spacing: 2px;font-size: 14px;font-family: nunito;border-top-left-radius:6px;border-top-right-radius:6px;}
+.findPw { width:360px; margin:0 auto; text-align:center;}
+.findPw fieldset > ul {height:190px;padding:0;}
+.findPw p {margin: 7px 0 0;}
+.findPw select {width:100%}
+.findPw .check {    margin-bottom: 30px;color: #353535;font-size: 12px;text-align: right; }
+.findPw .ec-base-desc li { margin:5px 0 0; }
+.findPw .mobileauth .desc { line-height:1.5em; }
+.findPw .ipin,
+.findPw .mobileauth { position:relative; margin:10px 0 0 0; }
+.findPw .ipin a,
+.findPw .mobileauth a { position:absolute; bottom:0; right:0; }
+.findPw input[type=text] {background:transparent;width: 100%;height: 28px;line-height: 28px;padding: 4px 0 9px 0;border: 0 none;color: #8F8F91;border-bottom: 1px solid #ddd;margin-bottom:8px;}
+.findPw input[type=password] { width:172px; background:transparent;}
+.findPw #mobile1 { float:left;width:110px; margin-right:10px;}
+.findPw #mobile2 { float:left;width:120px; margin-right:10px;}
+.findPw #mobile3 { float:left;width:110px; }
+
+
+/***** 공통 ******/
+
+.text {font-size: 12px;text-align: left;letter-spacing: -1px;padding: 31px 0 0;color: #a5a5a5;}
+.findPw i,
+.findId i {display: inline-block;font-size: 15px;color: #171717;margin-right: 5px;}
+.btnFind a {display: block;box-sizing: border-box;padding: 14px 98px;background: #d2d2d2;font-family: nunito,맑은 고딕;letter-spacing: 1px;font-weight: 500;font-size: 13px;COLOR: #fff;}
+.btnFind .hvr-sweep-to-right:before {background: #171717}
+
+.findId .btnFind a {margin-top:57px;}
+.findPw .btnFind a {margin-top:25px;}
+

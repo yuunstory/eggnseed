@@ -1,0 +1,30 @@
+<!--@css(/layout/basic/css/common.css)-->
+<!--@css(/_onedesign/css/basic.css)-->
+<!--@css(/_onedesign/css/hover.css)-->
+<!--@css(/_onedesign/css/searchidpw.css)-->
+<!--@js(/_onedesign/js/memberpage.js)-->
+
+<div module="member_passwordreset">
+
+    <div class="inner">
+        <h3>비밀번호 재설정</h3>
+        <fieldset>
+            <legend>비밀번호 재설정</legend>
+            <ul class="ec-base-desc typeBullet gSmall">
+                <li><span class="desc"><strong class="txtEm" style="font-size:15px;font-family:Lato">{$member_id}</strong></span></li>
+                <li>
+                    <div class="desc">
+                        {$form.new_passwd}
+                        <div class="txtInfo">
+                            {$passwd_type_desc}
+                        </div>
+                    </div>
+                </li>
+                <li><span class="desc">{$form.new_passwd_confirm}</span></li>
+            </ul>
+			 <p>
+            <a onclick="{$action_func_password_reset_submit}" class="btn_07 hvr-sweep-to-right">비밀번호 변경</a>
+        </p>
+        </fieldset>
+    </div>
+</div>

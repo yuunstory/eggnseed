@@ -1,0 +1,104 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@js(/_onedesign/js/member.js)-->
+<!--@js(/_onedesign/js/memberpage.js)-->
+<!--@css(/_onedesign/css/basic.css)-->
+
+
+<div module="member_login">
+<!--@css(/css/module/member/260/login.css)-->
+    <!--
+        $defaultReturnUrl = /index.html
+        $forbidIpUrl = member/adminFail.html
+    -->
+    <div class="login">
+        <h3 class="boxTitle">회원로그인</h3>
+        <fieldset>
+            <legend>회원로그인</legend>
+            <label class="id ePlaceholder" title="{$login_id_type_text}">{$form.member_id}</label>
+            <label class="password ePlaceholder" title="비밀번호">{$form.member_passwd}</label>
+            <p class="security">
+                {$form.member_check_save_id}
+                {$form.member_check_secret_connect}
+            </p>
+            <a href="#none" class="btnLogin" onclick="{$action_func_login}">로그인</a>
+            <ul class="snsArea">
+                <li class="{$display_naver|display}">
+                    <a href="#none" onclick="{$naver_func_login}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/member/btn_naver_login.gif" alt="네이버 로그인" /></a>
+                </li>
+                <li class="{$display_facebook|display}">
+                    <a href="#none" onclick="{$facebook_func_login}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/member/btn_facebook_login.gif" alt="페이스북 로그인" /></a>
+                </li>
+                <li class="{$display_google|display}">
+                    <a href="#none" onclick="{$google_func_login}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/member/btn_google_login.gif" alt="구글 로그인" /></a>
+                </li>
+                <li class="{$display_kakao|display}">
+                    <a href="#none" onclick="{$kakao_func_login}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/member/btn_kakao_login.gif" alt="카카오계정 로그인" /></a>
+                </li>
+                <li class="{$display_line|display}">
+                    <a href="#none" onclick="{$line_func_login}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/member/btn_line_login.gif" alt="LINE 로그인" /></a>
+                </li>
+                <li class="{$display_apple|display}">
+                    <a href="#none" onclick="{$apple_func_login}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/member/btn_apple_login.gif" alt="apple 로그인" /></a>
+                </li>
+                <li class="{$display_yahoojp|display}">
+                    <a href="#none" onclick="{$yahoojp_func_login}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/member/btn_yahoo_login.gif" alt="Yahoo! 로그인" /></a>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="/member/id/find_id.html">아이디찾기</a></li>
+                <li><a href="/member/passwd/find_passwd_info.html">비밀번호찾기</a></li>
+                <li><a href="/member/join.html">회원가입</a></li>
+            </ul>
+            <p class="link {$display_nomember|display}" id="noMemberWrap">
+                비회원님도 상품구매가 가능하나 다양한<br />회원혜택에서 제외됩니다.
+                <a href="{$returnUrl}" class="btnEm" onclick="{$action_nomember_order}">비회원구매</a>
+            </p>
+        </fieldset>
+    </div>
+</div>
+
+
+
+
+
+<div module="MyShop_OrderHistoryNologin" class="noLogin">
+    <!--@css(/css/module/myshop/orderHistoryNologin.css)-->
+    <!--
+        $orderDetailUrl = /myshop/order/detail.html
+    -->
+    <h3>비회원 주문조회</h3>
+    
+	<div class="inputline">
+		<i class="xi-user"></i>
+		<label class="id ePlaceholder" title="주문자명">{$form.order_name}</label>
+	</div>
+	<div class="inputline">
+		<i class="xi-list-number"></i>
+		<label class="number ePlaceholder" title="주문번호">{$form.order_id}</label>
+	</div>
+	<div class="inputline">
+		<i class="xi-lock"></i>
+		<label class="password ePlaceholder" title="주문비밀번호">{$form.order_password}</label>
+	</div>	
+    <div class="button"><input type="image" src="/_images/btnNonmemberHistory.gif" alt="조회" style="cursor:pointer;"	></div>
+	<p>비회원은 주문번호 + 비밀번호로 조회됩니다</p>
+</div>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+<!--
+
+// 이전페이지가 비밀번호 초기일때
+var prevUrl =  document.referrer;
+if ( prevUrl.match("/member/passwd/passwd_reset.html"))
+{
+	window.location = "/member/passwd/find_passwd_info.html";
+} 
+else {	
+}
+//-->
+</script>

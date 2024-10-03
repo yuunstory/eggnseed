@@ -1,0 +1,17 @@
+/* 게시판 전체 공통 */
+.xans-board-title .title { min-height:30px; margin:10px 0 20px; border-bottom:1px solid #ececec; }
+.xans-board-title .title h2 { display:inline-block; padding:0 0 0 12px; color:#535353; font-size:16px; *display:inline; *zoom:1; background:url("//img.echosting.cafe24.com/skin/base/layout/ico_heading.gif") 0 50% no-repeat; }
+.xans-board-title .title p { display:inline-block; margin:0 0 0 6px; padding:0 0 0 10px; color:#939393; vertical-align:bottom; background:url("//img.echosting.cafe24.com/skin/base/common/ico_bar.gif") no-repeat 0 4px; *display:inline; *zoom:1; }
+.xans-board-title p.imgArea { margin:0 0 20px; }
+
+/* 댓글삭제 */
+.xans-board-commentdel { padding:80px 0; background: #f7f7f7; text-align:center; }
+.xans-board-commentdel .commentDel {}
+.xans-board-commentdel .commentDel h3{color: #383838;font-weight: 400;font-size:18px; font-family: '맑은 고딕';}
+.xans-board-commentdel .commentDel .info { display:none; padding: 23px 0; font-size: 12px;font-weight: normal;color: #888;}
+.xans-board-commentdel .commentDel .info strong{font-weight:normal; color:#888;}
+.xans-board-commentdel .commentDel .password{margin-top:23px;}
+.xans-board-commentdel .commentDel .password label { display:none; width:55px; font-weight:normal; }
+.xans-board-commentdel .commentDel .password input { width:250px; padding:8px 10px; border-radius:6px; font-size:16px; border:0;}
+.xans-board-commentdel .commentDel .ec-base-button{padding:23px 0 0;}
+.xans-board-commentdel .commentDel .ec-base-button button{line-height:18px;}

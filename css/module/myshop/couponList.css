@@ -1,0 +1,10 @@
+.xans-myshop-couponlist .title { overflow:hidden; margin:40px 0 10px 0px; *zoom:1; }
+.xans-myshop-couponlist .title h3 {     font-family: 'noto sans kr','Malgun Gothic';font-weight: 300;font-size: 24px;line-height: 32px;font-size: 18px;float:left}
+.xans-myshop-couponlist .title p { float:right; color:#757575;padding-top:13px; }
+.xans-myshop-couponlist .title b {color:#171717;}
+.xans-myshop-couponlist td.payment,
+.xans-myshop-couponlist td.sale,
+.xans-myshop-couponlist td.mileage { color:#757575; }
+
+
+.btn_01 {padding: 11px 43px 10px !important;}

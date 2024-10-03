@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+<!--@css(/layout/basic/css/common.css)-->
+<!--@css(/_onedesign/css/hover.css)-->
+<!--@js(/_onedesign/js/memberpage.js)-->
+
+<div module="member_findpasswd" >
+    <!--@css(/css/module/member/find_id.css)-->
+    <!--
+        $nextURL = /member/passwd/find_passwd_question.html
+     -->
+    <div class="findPw">
+        <fieldset>
+            <legend>비밀번호 찾기 1단계 정보 입력</legend>
+            <ul>
+				<p>{$form.searchType}</p>
+				<p class="check">{$form.check_method}</p>
+                <li class="gBlank20"><span class="desc">{$form.member_id}</span></li>
+                <li id="name_view" class="name"><span class="desc">{$form.name}</span></li>
+                <li id="ssn_view" class="ssn_no"><strong class="term" id="ssn_name">법인번호로 찾기</strong><span class="desc"> {$form.ssn} <span class="gBlank5 txtInfo">(-) 없이 숫자만 입력하세요.</span></span></li>
+                <li id="email_view" class="email" style="display:none;"><span class="desc">{$form.email}</span></li>
+                <li id="mobile_view" class="mobile" style="display:none;"><span class="desc">{$form.mobile1}{$form.mobile2}{$form.mobile3}</span></li>
+                <li id="ipin_view" class="ipin" style="display:none;"><strong class="term">아이핀인증으로 찾기</strong><span class="desc">회원가입을 아이핀으로 가입하신 <br />회원님께서는 아이핀으로 인증하세요. <a href="#none" onclick="{$action_func_find_passwd_question}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/member/btn_check6.gif" alt="아이핀 인증" /></a></span></li>
+                <li id="mobile_auth_view" class="mobileauth" style="display:none;"><strong class="term">휴대폰인증으로<br /> 찾기</strong><span class="desc txtInfo">본인 명의의 휴대폰으로<br /> 아이디 찾기를 진행할 수 있습니다. <br />휴대폰 명의자의 정보로 가입한 <br />아이디 찾기가 가능합니다.</span></li>
+            </ul>
+
+			<div class="btnFind">
+				<a href="#none" onclick="{$action_func_find_passwd_question}"class="hvr-sweep-to-right">비밀번호찾기</a>
+			</div>
+            
+        </fieldset>
+		<div class="text">
+			<i class="xi-warning"></i>
+			가입하신 방법에 따라 비밀번호 찾기가 가능합니다.<br>		
+			이메일 또는 휴대폰으로 초기화된 비밀번호를 받아보실 수 있습니다.
+		</div>
+    </div>
+</div>

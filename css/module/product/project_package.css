@@ -1,0 +1,33 @@
+.xans-product-menupackage { position:relative;}
+.xans-product-menupackage .title { text-align:center;  margin: 0 0 5px 0;}
+.xans-product-menupackage .title .banner { margin-bottom:5px; }
+.xans-product-menupackage .title .banner img{width:100%;}
+.xans-product-menupackage .title h2 {font-family: 'noto sans kr','Malgun Gothic'; font-weight:500; font-size:22px;}
+.xans-product-menupackage .title h2,
+.xans-product-menupackage .title .likeButton { display:inline-block; vertical-align:middle; margin-bottom:45px; display:none;}
+.xans-product-menupackage .title .likeButton button { margin:0 0 0 10px; color:#666; background:none; }
+.xans-product-menupackage .title .likeButton.selected button { color:#353535; }
+
+.tit2{font-family: 'noto sans kr','Malgun Gothic'; font-weight:500; font-size:22px; display:inline-block; vertical-align:middle;}
+/* 분류명 이미지 안보이게 */
+.subtimg {display:none;}
+.xans-project-package .menuCategory {font-size:0; line-height:0; letter-spacing:0; margin:45px 0;}
+.xans-project-package .menuCategory .tit2{    font-family: 'noto sans kr','Malgun Gothic';
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    display: block;
+    vertical-align: middle;padding-bottom:25px;}
+.xans-project-package .menuCategory .tit2 img{display:none;}
+
+/*하위분류*/
+.xans-project-package .menuCategory > li { display:inline-block; vertical-align:top; margin-right:8px; margin-top:8px; position:relative; z-index:98;}
+.xans-project-package .menuCategory > li > a {display:block; padding:8px 13px; border:1px solid #ececec; font-size:13px; line-height:18px; font-weight:400; color:#222;}
+.xans-project-package .menuCategory > li > a:hover{ font-weight:600; }
+.xans-project-package .menuCategory > li.selected > a { font-weight:600; }
+.xans-project-package .menuCategory > li .count { font-weight:normal; }
+
+.xans-project-package .menuCategory > li i{position:absolute; top:10px; right:10px; font-size:14px;}
+
+
+.xans-project-list h3{ font-size: 0; line-height: 0; }

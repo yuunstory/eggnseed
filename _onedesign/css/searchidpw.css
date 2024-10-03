@@ -1,0 +1,55 @@
+body {min-width:380px;}
+.btn_07 {margin-top:30px;}
+
+/* 아이디찾기 결과 */
+.xans-member-findidresult { text-align:center;line-height:22px;width:380px;margin:50px auto;}
+.xans-member-findidresult .findId { width:100%; margin:0 auto; }
+.xans-member-findidresult .findId h3 {    font-family: 'noto sans kr','Malgun Gothic';font-size: 18px;font-weight: 300;line-height: 32px;position: relative;display: block;margin-bottom: 5px;}
+.xans-member-findidresult .findId p.info { margin:0 0 30px; font-size:20px; color:#008bcc; font-weight:bold; }
+.xans-member-findidresult .findId .ec-base-box { line-height:28px;}
+.xans-member-findidresult .findId li label { display:inline-block; margin:0 0 5px 0; }
+.xans-member-findidresult .findId .copy {     margin: 0px 0 27px;color: #757575;font-size: 11px;letter-spacing: -0.5px;}
+
+/* 임시비밀번호 설정 */
+
+.xans-member-findpasswdmethod { text-align:center;line-height:22px;width:380px;margin:50px auto; }
+.xans-member-findpasswdmethod .inner { width:100%;margin:0 auto; }
+.xans-member-findpasswdmethod .inner h3 {  font-family: 'noto sans kr','Malgun Gothic';font-size: 18px;font-weight: 300;line-height: 32px;position: relative;display: block;margin-bottom: 5px;}
+.xans-member-findpasswdmethod .inner .ec-base-desc li {  display:block;line-height:25px;}
+.xans-member-findpasswdmethod .inner .ec-base-desc li.mobile .number { text-decoration:none; }
+.xans-member-findpasswdmethod .inner input[type=text] { width:172px; }
+
+/* 임시비밀번호 발송 완료 */
+
+.xans-member-findpasswdresult {text-align:center;line-height:22px;width:380px;margin:50px auto;}
+.xans-member-findpasswdresult .findPw { width:100%;margin:0 auto; }
+.xans-member-findpasswdresult .findPw h3 { font-family: 'noto sans kr','Malgun Gothic';font-size: 18px;font-weight: 300;line-height: 32px;position: relative;display: block;margin-bottom: 5px;}
+.xans-member-findpasswdresult .findPw .desc { margin:0 0 30px; font-size:20px; color:#171717; font-weight:bold; line-height:1.3; }
+.xans-member-findpasswdresult .findPw .ec-base-box { text-align:center}
+.xans-member-findpasswdresult .findPw .copy { margin:40px 0 0; line-height:160%; color:#757575; }
+
+/* 본인인증 */
+
+.xans-member-passwordverification {text-align:center;line-height:22px;width:380px;margin:20px auto 0}
+.xans-member-passwordverification .inner {  width:100%;margin:0 auto; }
+.xans-member-passwordverification .inner h3 { font-family: 'noto sans kr','Malgun Gothic';font-size: 18px;font-weight: 300;line-height: 32px;position: relative;display: block;margin-bottom: 5px;}
+.xans-member-passwordverification .inner .ec-base-desc li { margin:5px 0 0; }
+.xans-member-passwordverification .inner .ec-base-desc li.mobile .number { text-decoration:none; }
+.xans-member-passwordverification input[type=password] { padding: 2px 4px;color: #535353;font-size: 12px;width: 287px;height: 39px;line-height: 39px;background: #d2d2d2c7;border: 0;margin: 20px 0;border-radius: 10px; text-align:center;}#user_verification_email_desc,#user_verification_mobile_desc{font-size:12px;color:#171717}
+
+
+
+/* 비밀번호 초기화 */
+
+.xans-member-passwordreset { text-align:center;line-height:22px;width:380px;margin:20px auto 0}
+.xans-member-passwordreset .inner {  width:100%;margin:0 auto;}
+.xans-member-passwordreset .inner h3 {font-family: 'noto sans kr','Malgun Gothic';font-size: 18px;font-weight: 300;line-height: 32px;position: relative;display: block;margin-bottom: 5px;}
+.xans-member-passwordreset .inner .ec-base-desc li { margin:5px 0 0; }
+.xans-member-passwordreset .inner .ec-base-desc li.mobile .number { text-decoration:none; }
+.xans-member-passwordreset .inner input[type=text] {   padding: 2px 4px;color: #535353;font-size: 12px;width: 287px;height: 39px;line-height: 39px;background: #d2d2d2c7;border: 0;margin: 20px 0;border-radius: 10px; text-align:center; }
+.xans-member-passwordreset .inner input[type=text],
+.xans-member-passwordreset .inner input[type=password] {width: 285px;height: 30px;line-height: 30px;background: #dedede;margin: 13px 0;border: 0;border-radius: 0;padding: 20px 15px;text-align: center;color: #fff;font-size:25px;line-height:30px;}
+.xans-member-passwordreset .inner input:-ms-input-placeholder, textarea:-ms-input-placeholder { color:#fff;font-size:12px;line-height:30px; }
+.xans-member-passwordreset .inner input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color:#fff;font-size:12px;;line-height:30px;}
+.xans-member-passwordreset .inner input::-moz-placeholder, textarea::-moz-placeholder { color:#fff;font-size:12px;;line-height:30px; }
+.xans-member-passwordreset .txtInfo {font-size:12px;color:#171717}

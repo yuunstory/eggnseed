@@ -1,0 +1,71 @@
+#contents { position:relative; }
+
+/*추가*/
+.xans-order-result .ec-base-box.typeMember .information{ display:none; }
+.btn_gray.more{vertical-align:baseline;}
+.ps p{margin-top:5px;}
+
+
+/* 주문완료 */
+.orderInfo { width:100%; padding:100px 0; color:#535353; background:#f1f1f1; text-align:center; box-sizing:border-box;     background: url(/_images/bg_loginpage.jpg) center no-repeat;
+    background-size: cover;}
+.orderInfo p { margin:0 0 30px; display:block; color:#535353; font-size:45px; font-weight:200; font-family: '맑은 고딕','Malgun Gothic'; }
+.orderInfo li {font-family: Nunito,'Hind Madurai','Noto Sans Korean',AppleGothic,sans-serif;}
+.orderInfo li strong { font-size:16px; font-weight:400; letter-spacing:1.5px; }
+
+/* Title */
+.xans-order-result .title { margin:50px 0 12px; position:relative;}
+.xans-order-result .title h3 { display:inline-block; font-family:'맑은 고딕','Malgun Gothic'; font-weight:500; font-size:14px; padding-left:6px;}
+    .xans-order-result .orderListArea .title { }
+
+/* View */
+.xans-order-result .ec-base-table td .map { margin:0 10px 0 0; max-width:100%; }
+.xans-order-result .ec-base-table td .map img { margin-top:5px; max-width:100%; border:1px solid #e8e8e8; vertical-align:middle; }
+
+/* List */
+.xans-order-result .orderListArea .title + .ec-base-table table { margin:0; }
+.xans-order-result .orderArea .ec-base-table th,
+.xans-order-result .totalArea .detail .ec-base-table th{padding-left:15px;}
+.xans-order-result .orderArea .ec-base-table td,
+.xans-order-result .totalArea .detail .ec-base-table td{padding-left:10px;}
+.xans-order-result .ec-base-table tfoot td{border-bottom:0;}
+.xans-order-result .ec-base-table tfoot td strong.txtEm{ letter-spacing: 1.2px; }
+.xans-order-result .ec-base-table tfoot td strong.txtEm span{font-size: 20px !important; font-weight: 500; letter-spacing: 1.2px; }
+.xans-order-result .ec-base-table.typeList td.thumb img { max-width:80px; }
+.xans-order-result .ec-base-table.typeList .name .ec-set-product-name { display:block; }
+.xans-order-result .ec-base-table td div.option,
+.xans-order-result .ec-base-table td ul.option > li { margin:9px 0 0; color:#757575; line-height:16px; }
+.xans-order-result .ec-base-table td ul.option > li > strong { display:block; color:#535353; }
+.xans-order-result .ec-base-table td div.option span.file a,
+.xans-order-result .ec-base-table td ul.option > li > span.file a { margin:0 0 0 4px; padding:0 0 0 11px; color:#757575; text-decoration:underline; background:url("//img.echosting.cafe24.com/skin/base/common/ico_file.gif") no-repeat 0 2px; }
+
+.xans-order-result .ec-base-button {  }
+
+/* Total */
+.xans-order-result .totalArea { *margin:40px 0 0; }
+.xans-order-result .totalArea .ec-base-table.total table { z-index:2; border-color:#e8e8e8; margin-top:0;}
+.xans-order-result .totalArea .ec-base-table.total th { }
+.xans-order-result .totalArea .ec-base-table.total th strong{font-size:12px; font-weight:normal !important;}
+.xans-order-result .totalArea .ec-base-table.total td { height:60px;}
+.xans-order-result .totalArea .ec-base-table.total td .box { word-break:normal; letter-spacing: 1.2px;}
+.xans-order-result .totalArea .ec-base-table.total .txt23 {font-size: 20px !important; font-weight: 500; letter-spacing: 1.2px; }
+.xans-order-result .totalArea .ec-base-table.gMerge table {margin-top:-2px; }
+.xans-order-result .totalArea .ec-base-table.gMerge + .ec-base-table.gMerge table { }
+.xans-order-result .totalArea .ec-base-table tr.sum td { padding:10px; font-size:12px !important; font-family: Nunito,'Hind Madurai','Noto Sans Korean',AppleGothic,sans-serif;}
+.xans-order-result .totalArea .ec-base-table tr.sum td strong{font-size:12px;}
+
+.xans-order-result .totalArea .detail .gMerge{margin-top:1px !important;}
+
+/* 총 주문금액 상세내역 레이어 */
+.xans-order-result .totalDetail { display:none; z-index:110; width:300px; background:#eee; margin:86px 0 0 64px; opacity:0.85;}
+.xans-order-result .totalDetail .header{padding:10px 15px 8px; background:#4f4f4f;}
+.xans-order-result .totalDetail .header h3{font-size:12px; color:#fff;}
+.xans-order-result .totalDetail .close{padding:8px 10px;}
+.xans-order-result .totalDetail .close i{color:#eee; font-size:18px;}
+.xans-order-result .totalDetail .content{margin:0; padding:10px 15px;}
+.xans-order-result .totalDetail .content p { text-align:right; font-size:12px; font-weight:600;  font-family: Nunito,'Hind Madurai','Noto Sans Korean',AppleGothic,sans-serif;}
+.xans-order-result .totalDetail .content .ec-base-desc { margin:6px 0 0; padding-top:5px; border-top:1px dotted #b0b1b3;}
+.xans-order-result .totalDetail .content .ec-base-desc li{line-height:18px;  font-family: Nunito,'Hind Madurai','Noto Sans Korean',AppleGothic,sans-serif;}
+
+.btnWrap{margin-top:5px;}
+.orderArea .ec-base-table strong{letter-spacing:0.5px;}

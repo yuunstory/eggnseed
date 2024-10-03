@@ -1,0 +1,26 @@
+.xans-myshop-orderhistorylistitem .title {}
+.xans-myshop-orderhistorylistitem .title h3 {font-family: 'noto sans kr','Malgun Gothic';font-weight: 300;font-size: 24px;line-height: 32px;font-size:18px; }
+.xans-myshop-orderhistorylistitem.ec-base-table td a { color:#353535; }
+.xans-myshop-orderhistorylistitem.ec-base-table td.product {line-height:55px;}
+.xans-myshop-orderhistorylistitem.ec-base-table td.number { letter-spacing:0px;}
+.xans-myshop-orderhistorylistitem.ec-base-table td.number a { font-family:nunito;font-size:10px;}
+.xans-myshop-orderhistorylistitem.ec-base-table td.thumb img { width:80px;max-height:55px;overflow:hidden;}
+.xans-myshop-orderhistorylistitem.ec-base-table .name .ec-set-product-name { display:block; }
+.xans-myshop-orderhistorylistitem.ec-base-table td.product div.option,
+.xans-myshop-orderhistorylistitem.ec-base-table td.product ul.option > li { margin:9px 0 0; color:#757575; line-height:16px; }
+.xans-myshop-orderhistorylistitem.ec-base-table td.product ul.option > li > strong { display:block; color:#353535; }
+.xans-myshop-orderhistorylistitem.ec-base-table td.product div.option span.file a,
+.xans-myshop-orderhistorylistitem.ec-base-table td.product ul.option > li > span.file a { margin:0 0 0 4px; padding:0 0 0 11px; color:#757575; text-decoration:underline; background:url("//img.echosting.cafe24.com/skin/base/common/ico_file.gif") no-repeat 0 2px; }
+.xans-myshop-orderhistorylistitem.ec-base-table td.number img,
+.xans-myshop-orderhistorylistitem.ec-base-table td.state img {margin:1px 0;}
+.xans-myshop-orderhistorylistitem.ec-base-table td.product div.option {display:inline-block;}
+.xans-myshop-orderhistorylistitem .btns a {display:inline-block;}
+.xans-myshop-orderhistorylistitem .btns li {padding-top:2px;}
+.xans-myshop-orderhistorylistitem .btns li:first-child {padding:0;}
+.ec-base-tab2 a {margin-left:5px;line-height:15px;}
+
+.listTop {margin:40px 0 20px}
+.listTop:after {content:"";clear:both;display:block;}
+.listTop .title {float:left;padding:0;}
+.listTop .title h3 {}
+.listTop .ec-base-tab2 {float:right;}

@@ -1,0 +1,26 @@
+.xans-member-findpasswdquestion { }
+.xans-member-findpasswdquestion .findPw {text-align: center;
+    line-height: 22px;
+    width: 380px;
+    margin: 50px auto;}
+.xans-member-findpasswdquestion .findPw h3 { font-family: '¸¼Àº °íµñ','Malgun Gothic';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 32px;
+    position: relative;
+    display: block;
+    margin-bottom: 5px;}
+
+.xans-member-findpasswdquestion .findPw .typeBullet{margin:20px 0;}
+.xans-member-findpasswdquestion .findPw .typeBullet dt{display:none;}
+.xans-member-findpasswdquestion .findPw .typeBullet dd{line-height:26px; font-size:14px;}
+
+.xans-member-findpasswdquestion .findPw input[type="text"] {margin-top:20px; text-align:center; width: 100%; height: 28px;
+    line-height: 28px;
+    padding: 4px 0 9px 0;
+    border: 0 none;
+    color: #8F8F91;
+    border-bottom: 1px solid #ddd;
+    background: transparent; }
+
+.xans-member-findpasswdquestion .findPw a{display:block;}

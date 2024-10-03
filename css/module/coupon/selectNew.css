@@ -1,0 +1,26 @@
+#popup { width:900px;}
+.xans-coupon-selectnew.ec-base-layer div.ec-base-help .inner{padding:0; background: transparent;}
+.xans-coupon-selectnew.ec-base-layer div.ec-base-help{margin-bottom:20px;}
+.xans-coupon-selectnew.ec-base-layer .ec-base-table.typeList tfoot td #mTotalCouponDiscount{color:#171717; font-weight:500; margin-left:5px;}
+.xans-coupon-selectnew.ec-base-layer .ec-base-button{text-align:center; padding-bottom:20px;}
+.xans-coupon-selectnew.ec-base-layer .ec-base-button a{display:inline-block; vertical-align:middle; padding:8px 28px;     background:#e9e9e9; color:#535353; margin:0 2px;}
+.xans-coupon-selectnew.ec-base-layer .ec-base-button a:first-child{background: #9c9a9a; color:#fff;}
+
+
+
+
+
+.xans-coupon-selectnew .title {display:none; margin:20px 0 10px; }
+.xans-coupon-selectnew .title h3 { color:#353535; font-size:12px; }
+
+.xans-coupon-selectnew .ec-base-table td.thumb img { max-width:60px; }
+.xans-coupon-selectnew .ec-base-table td div.option  { margin:9px 0 0; color:#707070; line-height:16px; }
+.xans-coupon-selectnew .ec-base-table td div.type { margin:9px 0 0; line-height:16px; }
+.xans-coupon-selectnew .ec-base-table td.select select { max-width:100%; margin:1px 0;}
+
+.xans-coupon-selectnew .ec-base-table.total table {}
+.xans-coupon-selectnew .ec-base-table.total tfoot td .total { margin:0 0 0 15px; }
+.xans-coupon-selectnew .ec-base-table.total td .box { min-height:40px; line-height:2; word-break:normal; }
+.xans-coupon-selectnew .ec-base-table.total td .txt23 { font-size:20px; letter-spacing:1px; font-family: Nunito,'Hind Madurai','Noto Sans Korean',AppleGothic,sans-serif; font-weight:300;}
+.xans-coupon-selectnew .ec-base-table.total .detail td { height:auto; line-height:inherit; font-size:12px; color:#707070; }
+.xans-coupon-selectnew .ec-base-table.total .detail li { margin:0 0 3px; padding:0 0 0 9px; background:url("//img.echosting.cafe24.com/skin/base/common/ico_dash.gif") no-repeat 0 7px; }

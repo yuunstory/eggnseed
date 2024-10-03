@@ -1,0 +1,74 @@
+<!-- 아이콘 -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,800,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700" rel="stylesheet">
+
+<div id="header_wrap">
+	<!-- 로고라인 -->
+	<div id="header">
+		<div class="logoArea">
+
+            <div class="logo logomain" module="Layout_LogoTop">
+                <a href="/index.html"><img src="/_images/logo2.png" alt=""></a>
+            </div><!-- .logo -->         
+
+
+            <div class="category" module="Layout_category">        
+                <!--@js(/_onedesign/js/category.js)-->
+                <ul class="position top-menu">                    
+                    <li class="cate1 menu01"><a href="/product/list.html{$param}">{$name_or_img_tag}</a></li>
+                    <li class="cate1 menu02"><a href="/product/list.html{$param}">{$name_or_img_tag}</a></li>
+                    <li class="cate1 menu03"><a href="/product/list.html{$param}">{$name_or_img_tag}</a></li>
+                    <li class="cate1 menu04"><a href="/product/list.html{$param}">{$name_or_img_tag}</a></li>                           
+					<li class="cate1 menu05"><a href="/product/list.html{$param}">{$name_or_img_tag}</a></li>                                     
+                    <li class="cate1"><a href="/product/list.html{$param}">{$name_or_img_tag}</a></li>                     
+                    <li class="etc first"><a href="/myshop/index.html">마이쇼핑</a>
+                        <div class="sub-category transition3s" style="left:18px;">
+                            <ul>
+                                <li module="Layout_statelogoff"><a href="/member/login.html">로그인</a></li>
+                                <li module="Layout_statelogoff"><a href="/member/join.html">회원가입</a></li>
+                                <li module="Layout_stateLogon"><a href="{$action_logout}">로그아웃</a></li>
+                                <li module="Layout_stateLogon"><a href="/member/modify.html">회원정보</a></li>
+                                <li><a href="/order/basket.html">장바구니</a></li>
+                                <li><a href="/myshop/order/list.html">주문내역</a></li>
+                                <li><a href="/myshop/mileage/historyList.html">적립금</a></li>
+                                <li><a href="/myshop/coupon/coupon.html">마이쿠폰</a></li>
+                                <li><a href="/myshop/board_list.html">내게시글</a></li>
+                            </ul>	
+                        </div>
+                    </li>
+                    <li class="etc"><a href="#none">커뮤니티</a>
+                        <div class="sub-category transition3s" module="Layout_BoardInfo">
+                                <ul>
+                                    <li><a href="{$link_board_list}">{$board_name}</a></li>
+                                    <li><a href="{$link_board_list}">{$board_name}</a></li>
+                                </ul>	
+                        </div>
+                    </li>
+                </ul>  
+               </div></li>
+             </div>
+		</div><!-- .logoArea -->        
+	</div><!-- #header -->
+    <div class="btnAll">
+        <ul>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </ul>
+    </div>   
+</div><!-- #header_wrap -->
+
+
+<div id="hideMenu">
+    <div module="Layout_category">                
+        <ul class="position">
+            <li class="cate1"><a href="/product/list.html{$param}">{$name_or_img_tag}</a></li>
+            <li class="cate1"><a href="/product/list.html{$param}">{$name_or_img_tag}</a></li>
+            <li class="cate1"><a href="/product/list.html{$param}">{$name_or_img_tag}</a></li>
+            <li class="cate1"><a href="/product/list.html{$param}">{$name_or_img_tag}</a></li>
+           
+        </ul>  
+    </div>
+</div>

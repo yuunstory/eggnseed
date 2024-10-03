@@ -1,0 +1,39 @@
+/* 공통 css */
+.ec-base-paginate { margin:40px 0; text-align:center ; font-size:0; line-height:0; }
+.ec-base-paginate > a{margin:0 1px;}
+.ec-base-paginate > a > img { display:inline-block; vertical-align:middle; padding:0 6px;}
+
+.ec-base-paginate ol { display:inline-block; font-size:0; line-height:0; vertical-align:middle; *display:inline; *zoom:1; *margin:0; margin:0 6px;}
+.ec-base-paginate li { display:inline-block; font-size:15px; color:#666; vertical-align:middle; *display:inline; *zoom:1; }
+.ec-base-paginate li a {position:relative; display:block; width:13px; line-height:13px; padding:0 12px; font-size:12px; font-weight:300; color:#999; text-decoration:italic; position:relative; bottom:0; transition:0.15s ease-in-out; text-align:center;font-family:Nunito;}
+/* .ec-base-paginate li a:before {
+
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    width: 38px;
+    height: 38px;
+    background: #fff;
+    z-index: -1;
+    -webkit-transform: skewX(-25deg);
+    -moz-transform: skewX(-25deg);
+    -ms-transform: skewX(-25deg);
+    -o-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+	border:1px solid #eee;
+	border-top:0;
+	border-bottom:0;}
+ */
+.ec-base-paginate li a.this:before {background:#cac4c4;border:0}
+.ec-base-paginate li a.this {font-weight:700; text-decoration:underline; color:#333}
+.ec-base-paginate a.nolink { cursor:default; }
+
+/* typeSub */
+.ec-base-paginate.typeSub ol { margin:0 15px; vertical-align:middle; }
+.ec-base-paginate.typeSub li { font-size:12px; border:0; }
+.ec-base-paginate.typeSub img { vertical-align:middle; }
+.ec-base-paginate.typeSub li a { width:auto; margin:0 5px 0; padding:2px; color:#353535; background:none; }
+.ec-base-paginate.typeSub li a.this { color:#535353; text-decoration:underline; border:0; }
+.ec-base-paginate.typeSub .first { margin-right:3px; }
+.ec-base-paginate.typeSub .last { margin-left:3px; }

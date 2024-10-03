@@ -1,0 +1,423 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@js(/_onedesign/js/member.js)-->
+<!--@js(/_onedesign/js/memberpage.js)-->
+
+<div module="member_join" class="memberJoin">
+    <!--@css(/css/module/member/join.css)-->
+    <!--
+        $returnUrl = /member/join_result.html
+        $checkIdUrl = /member/check_id.html
+        $personalName = 이름
+        $companyName = 법인명
+        $companySsn = 법인번호
+        $foreignerSsn1 = 외국인 등록번호
+        $foreignerSsn2 = 여권번호
+        $foreignerSsn3 = 국제운전면허증번호
+    -->
+	<h3 class="title">MEMBER SIGN UP</h3>
+
+    <div class="ec-base-table join1" > <!-- 사업자나 외국인 가입을 받을때 해당부분이 스타일을 지워주세요-->
+        <table border="1" summary="">			
+        <caption>회원가입</caption>
+        <colgroup>
+            <col style="width:150px;" />
+            <col style="width:auto;" />
+        </colgroup>
+        <tbody>
+            <tr class="{$display_member_type|display}" style="display: none;">               
+                <td colspan=2>{$form.member_type}</td>
+            </tr>
+            <tr id="companyWrap"style="display: none;">                    
+                <td colspan=2>{$form.company_type}</td>
+            </tr>
+            <tr id="authMember">
+                <style type="text/css">
+					#nameContents {font-size: 16px;font-weight: bold;display: inline-block;line-height: 46px;}
+                </style>
+                <td colspan="2">
+                    <div id="authWrap">
+                        <!-- 개인 회원 인증 -->
+                        <div id="personAuth">
+                            <div id="personalTypeWrap">{$form.personal_type}</div>
+                            <!-- 아이핀인증 -->
+                            <div id="ipinWrap">
+                                <a href="#none" onclick="{$action_ipin_open}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/member/btn_certification_ipin.gif" alt="아이핀인증" /></a><br />아이핀이란, 회원님의 개인정보 보호를 위해 웹사이트에 주민등록번호를 제공하지 않고 본인임을 확인하는 인터넷상의 개인식별번호 서비스입니다. 아이핀을 통한 가입을 원하시면 아이핀 인증 버튼을 눌러 진행해 주십시오.
+                            </div>
+
+                            <!-- 휴대폰인증 -->                   
+                            <div id="mobileWrap" style="padding: 20px 0 50px;font-size: 14px;text-align: center;">
+                                <a href="#none" onclick="{$action_mobile_open}" class="btnAddr" style="margin: 0 0 15px">휴대폰인증하기</a><br />본인 명의의 휴대폰으로 본인인증을 진행합니다.
+                            </div>
+                            <!-- 이메일인증 -->
+                            <div id="emailWrap">
+                                <ul>
+                                    <li>기본정보 &gt; 이메일 항목에 입력하신 정보로 본인인증을 진행합니다.</li>
+                                    <li>회원가입 후에 입력하신 이메일 주소로 인증 메일이 발송되오니, 확인해 주시기 바랍니다.</li>
+                                 </ul>
+                           </div>
+                        </div>
+
+                        <!-- 법인 사업자 인증 -->
+                        <div id="businessAuth">
+                            <ul class="grid">
+                                <li>법인명<br />{$form.bname}</li>
+                                <li>법인번호<br />{$form.bssn1} - {$form.bssn2} <a href="#none" onclick="{$action_business_dupl}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/member/btn_check2.gif" alt="중복확인" /></a></li>
+                            </ul>
+                        </div>
+
+                        <!-- 외국인 회원 인증 -->
+                        <div id="foreignerAuth">
+                            <ul class="grid">
+                                <li>이름(Name) {$form.foreigner_name}</li>
+                                <li>{$form.foreigner_type} {$form.foreigner_ssn} <a href="#none" onclick="{$action_foreigner_check}"><img src="//img.echosting.cafe24.com/skin/base_ko_KR/member/btn_check2.gif" alt="중복확인" /></a></li>
+                            </ul>
+                            <div id="foreignerPersonWrap">
+                                <p class="gBlank5">회사는 회원의 본인확인 및 서비스제공을 위하여 고유식별정보를 수집하여 보관하며 개인정보처리방침에 따라 <br />보유 및 이용합니다. 고유식별정보 제공을 거부하는 경우 서비스 이용이 제한됩니다.</p>
+                                <p>{$form.f_identification_check}</p>
+                            </div>
+                            <!-- 이메일인증 -->
+                            <div id="foreignerEmailWrap">
+                                <ul>
+                                    <li>기본정보 &gt; 이메일 항목에 입력하신 정보로 본인인증을 진행합니다.</li>
+                                    <li>회원가입 후에 입력하신 이메일 주소로 인증 메일이 발송되오니, 확인해 주시기 바랍니다.</li>
+                                 </ul>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+
+    <h3 class="{$display_base_column_title|display}">고객님의 기본정보를 입력해 주세요.</h3>
+    <p class="required {$display_base_column_title|display}"><img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" alt="필수" /> 회원가입 양식에 맞춰 항목을 기입해주세요 </p>
+    <div class="ec-base-table join2 typeWrite" style="position:relative;">
+		
+        <table border="1" summary="">
+        <caption>회원 기본정보</caption>
+        <colgroup>
+            <col style="width:150px;" />
+            <col style="width:auto;" />
+        </colgroup>
+        <tbody>
+			
+            <tr>                
+                <td>{$form.member_id} <span id="{$idMsg_id}"></span></td>
+            </tr>
+            <tr>
+                <td>{$form.passwd} <span id="password">{$passwd_type_desc}</span></td>
+            </tr>
+            <tr>
+                <td>{$form.user_passwd_confirm} <span id="{$pwConfirmMsg_id}"></span> </td>
+            </tr>
+            <tr class="{$display_hint|display}">
+                <td>{$form.hint}</td>
+            </tr>
+            <tr class="{$display_hint_answer|display}">
+                <td>{$form.hint_answer}</td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="{$name_contents}">{$form.name}</span>
+                    <span id="under14Msg" class="displaynone">14세 미만 사용자는 법정대리인 동의가 필요합니다.</span>
+                </td>
+            </tr>
+            <tr class="{$display_eng_name|display}">
+                <td>{$form.name_en} <span class="name_eng">(이름 - 성 형식으로 입력해 주세요.)</span></td>
+            </tr>
+            <!-- 외국인 회원 정보 -->
+            <tr>
+                <th scope="row" id="ssnTitle"></th>
+                <td id="ssnContents"></td>
+            </tr><!-- //외국인 회원 정보 -->
+            <tr id="{$companyRow}">
+                <td id="companyName">{$form.cname}</td>
+            </tr>
+            <tr id="{$companyNoRow}">
+                <td id="companySsn">{$form.cssn}</td>
+            </tr>
+            <tr id="nation">
+                <td>{$form.citizenship}</td>
+            </tr>
+            <tr class="{$display_addr|display}">
+                <td class="addr">
+                    <div>
+						{$form.postcode1}
+					   <a href="#none" onclick="{$action_find_address}" id="{$btn_find_post}" class="btnAddr">우편번호 입력하기</a>
+                    </div>
+                    <div>
+						{$form.addr1} <span class="addr">기본주소</span>
+                    </div>
+                    <div>
+						{$form.addr2} <span class="addr">나머지주소 {$address2_desc}</span>
+                    </div>
+                </td>
+            </tr>
+            <tr class="{$display_phone|display}">
+                <td>{$form.phone}</td>
+            </tr>
+            <tr class="{$display_mobile|display}">
+                <td>{$form.mobile}</td>
+            </tr>
+            <tr>
+                <td class="email" >{$form.email} <span id="{$emailMsg_id}"></span></td>
+            </tr>
+            <tr class="{$display_is_lifetime|display}">
+                <td>
+					<h3>회원가입시, 평생회원으로 가입하시겠습니까?</h3>
+                    {$form.is_lifetime}
+                    <ul class="txtDesc">
+                        <li>평생회원으로 가입하시면 <strong>{$mall_name}</strong> 회원 탈퇴시까지는 휴면회원으로 전환되지 않으며,<Br>
+						고객님의 개인정보가 탈퇴시까지 안전하게 보관됩니다.</li>
+                        <li class="{$display_is_lifetime_benefit|display}">지금 평생회원으로 가입하시면<Br>
+						쿠폰혜택을 드립니다. (쿠폰혜택을 받으신 경우, 3개월간 평생회원을 유지하셔야 합니다.)</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+
+    <h3 class="{$display_add_title|display}" style="margin-top:50px;padding-bottom:15px;">고객님의 추가정보를 입력해 주세요</h3>
+    <div class="join3{$display_add_title|display}">
+		   
+			<div class="{$display_nick|display} addoption">
+				<li class="addname">별명 <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" class="{$display_required_nick_name_flag|display}" alt="필수" /><li>
+				<li>{$form.nick_name} <p id="{$nick_msg}"></p></li>
+			</div>
+
+			<div class="{$display_is_sex|display} addoption">
+				<li class="addname">성별 <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" class="{$display_required_sex|display}" alt="필수" /><li>
+				<li>{$form.is_sex}</li>
+			</div>
+
+			<div class="{$display_birthday|display} addoption">
+				<li class="addname">생년월일 <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" class="{$display_required_is_birthday|display}" alt="필수" /><li>
+				<li>{$form.birth_year} 년 {$form.birth_month} 월 {$form.birth_day} 일 <span class="gIndent20 {$display_calendar_type|display}">{$form.is_solar_calendar}</span></li>
+			</div>
+
+			<div class="{$display_marry|display} addoption">
+				<li class="addname">결혼기념일 <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" class="{$display_required_is_wedding_anniversary|display}" alt="필수" /><li>
+				<li>{$form.marry_year} 년 {$form.marry_month} 월 {$form.marry_day} 일</li>
+			</div>
+
+			<div class="{$display_partner|display} addoption">
+				<li class="addname">배우자생일 <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" class="{$display_required_is_life_partner|display}" alt="필수" /><li>
+				<li>{$form.partner_year} 년 {$form.partner_month} 월 {$form.partner_day} 일</li>
+			</div>
+
+			<div class="{$display_child|display} addoption">
+				<li class="addname">자녀 <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" class="{$display_required_child|display}" alt="필수" /><li>
+				<li>{$form.child}</li>
+			</div>
+
+			<div class="{$display_school|display} addoption">
+				<li class="addname">최종학력 <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" class="{$display_required_school|display}" alt="필수" /><li>
+				<li>{$form.school}</li>
+			</div>
+
+			<div class="{$display_job_class|display} addoption">
+				<li class="addname">직종 <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" class="{$display_required_job_class|display}" alt="필수" /><li>
+				<li>{$form.job_class}</li>
+			</div>
+
+			<div class="{$display_job|display} addoption">
+				<li class="addname">직업 <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" class="{$display_required_job|display}" alt="필수" /><li>
+				<li>{$form.job}</li>
+			</div>
+
+			<div class="{$display_earning|display} addoption">
+				<li class="addname">연소득 <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" class="{$display_required_earning|display}" alt="필수" /><li>
+				<li>{$form.earning}</li>
+			</div>
+
+			<div class="{$display_car|display} addoption">
+				<li class="addname">자동차 <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" class="{$display_required_car|display}" alt="필수" /><li>
+				<li>{$form.car}</li>
+			</div>
+
+			<div class="{$display_region|display} addoption">
+				<li class="addname">지역 <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" class="{$display_required_region|display}" alt="필수" /><li>
+				<li>{$form.region}</li>
+			</div>
+
+			<div class="{$display_internet|display} addoption">
+				<li class="addname">인터넷 이용장소 <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" class="{$display_required_internet|display}" alt="필수" /><li>
+				<li>{$form.internet}</li>
+			</div>
+
+			<div class="{$display_inter|display} addoption">
+				<li class="addname">관심분야 <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" class="{$display_required_interest|display}" alt="필수" /><li>
+				<li >
+					<div class="interest">{$form.inter_check}</div>
+				</li>
+			</div>
+
+			<div  class="{$display_add1|display} addoption">
+				<li class="addname">{$title_add1} <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" class="{$display_required_add1|display}" alt="필수" /><li>
+				<li>{$form.add1}</li>
+			</div>
+
+			<div class="{$display_add2|display} addoption">
+				<li class="addname">{$title_add2} <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" class="{$display_required_add2|display}" alt="필수" /><li>
+				<li>{$form.add2}</li>
+			</div>
+
+			<div class="{$display_add3|display} addoption">
+				<li class="addname">{$title_add3} <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" class="{$display_required_add3|display}" alt="필수" /><li>
+				<li>{$form.add3}</li>
+			</div>
+
+			<div class="{$display_add4|display} addoption">
+				<li class="addname">{$title_add4} <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" class="{$display_required_add4|display}" alt="필수" /><li>
+				<li>{$form.add4}</li>
+			</div>
+
+			<div class="{$display_add5|display} addoption">
+				<li class="addname">{$title_add5} <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" class="{$display_required_add5|display}" alt="필수" /><li>
+				<li>{$form.add5}</li>
+			</div>
+
+			<div class="{$display_add6|display} addoption">
+				<li class="addname">{$title_add6} <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" class="{$display_required_add6|display}" alt="필수" /><li>
+				<li>{$form.add6}</li>
+			</div>
+
+			<div class="{$display_add7|display} addoption">
+				<li class="addname">{$title_add7} <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" class="{$display_required_add7|display}" alt="필수" /><li>
+				<li>{$form.add7}</li>
+			</div>
+
+			<div class="{$display_add8|display} addoption">
+				<li class="addname">{$title_add8} <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" class="{$display_required_add8|display}" alt="필수" /><li>
+				<li>{$form.add8}</li>
+			</div>
+
+			<div class="{$display_add9|display} addoption">
+				<li class="addname">{$title_add9} <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" class="{$display_required_add9|display}" alt="필수" /><li>
+				<li>{$form.add9}</li>
+			</div>
+
+			<div class="{$display_add10|display} addoption">
+				<li class="addname">{$title_add10} <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" class="{$display_required_add10|display}" alt="필수" /><li>
+				<li>{$form.add10}</li>
+			</div>
+
+			<div class="{$display_add11|display} addoption">
+				<li class="addname">{$title_add11} <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" class="{$display_required_add11|display}" alt="필수" /><li>
+				<li>{$form.add11}</li>
+			</div>
+
+
+			<div class="{$display_add12|display} addoption">
+				<li class="addname">{$title_add12} <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" class="{$display_required_add12|display}" alt="필수" /><li>
+				<li>{$form.add12}</li>
+			</div>
+
+			<div class="{$display_add13|display} addoption">
+				<li class="addname">{$title_add13} <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" class="{$display_required_add13|display}" alt="필수" /><li>
+				<li>{$form.add13}</li>
+			</div>
+
+			<div class="{$display_add14|display} addoption">
+				<li class="addname">{$title_add14} <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" class="{$display_required_add14|display}" alt="필수" /><li>
+				<li>{$form.add14}</li>
+			</div>
+
+			<div class="{$display_add15|display} addoption">
+				<li class="addname">{$title_add15} <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" class="{$display_required_add15|display}" alt="필수" /><li>
+				<li>{$form.add15}</li>
+			</div>
+
+
+
+
+			<div class="{$display_reco_id|display} addoption">
+				<li class="addname">추천인 아이디 (선택) <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" class="{$display_required_reco_id|display}" alt="필수" /><li>
+				<li>{$form.reco_id}</li>
+			</div>
+
+			<div class="{$display_bank|display} bank addoption">
+				<li class="addname">환불계좌 정보 <img src="//img.echosting.cafe24.com/skin/base/common/ico_required.gif" class="{$display_required_bank_account_no|display}" alt="필수" /><li>
+				<li>{$form.bank_account_owner}</li>	
+				<li>{$form.refund_bank_code}</li>
+				<li>{$form.bank_account_no}</li>
+				<li>('-'와 숫자만 입력해주세요.)</li>
+			</div>
+    </div>
+
+
+
+    <div class="agreeWrap">
+
+		
+		
+		<div class="allCheck">
+			<label for="sAgreeAllChecked"><strong>이용약관 및 개인정보수집 및 이용, 쇼핑정보 수신(선택)에 모두 동의합니다.</strong></label> {$sAgreeAllChecked}
+		</div>
+
+		<div class="agreeArea_wrap">
+			<div class="ec-base-box typeThinBg agreeArea">
+				<h4>[필수] 이용약관 동의</h4>
+				<div class="content">
+					{$service_desc}
+				</div>
+				<p class="check">{$form.agree_service_check}</p>
+			</div>
+
+			<div class="ec-base-box typeThinBg agreeArea">
+				<h4>[필수] 개인정보 수집 및 이용 동의</h4>
+				<div class="content">
+					{$privacy_desc}
+				</div>
+				<p class="check">{$form.agree_privacy_check}</p>
+			</div>
+
+			<div class="ec-base-box typeThinBg agreeArea {$display_information|display}">
+				<h4>[선택] 개인정보 제3자 제공 동의</h4>
+				<div class="content">
+					{$information_desc}
+				</div>
+				<p class="check">{$form.agree_information_check}</p>
+			</div>
+
+			<div class="ec-base-box typeThinBg agreeArea {$display_consignment|display}">
+				<h4>[선택] 개인정보 처리 위탁 동의</h4>
+				<div class="content">
+					{$consignment_desc}
+				</div>
+				<p class="check">{$form.agree_consignment_check}</p>
+			</div>
+
+			<div class="ec-base-box typeThinBg agreeArea {$display_marketing|display}">
+			
+				<h4>[선택] 쇼핑정보 수신 동의</h4>
+				<div class="content">
+					<p>할인쿠폰 및 혜택, 이벤트, 신상품 소식 등 쇼핑몰에서 제공하는 유익한 쇼핑정보를 SMS나 이메일로 받아보실 수 있습니다.</p>
+					<p>단, 주문/거래 정보 및 주요 정책과 관련된 내용은 수신동의 여부와 관계없이 발송됩니다.</p>
+					<p>선택 약관에 동의하지 않으셔도 회원가입은 가능하며, 회원가입 후 회원정보수정 페이지에서 언제든지 수신여부를 변경하실 수 있습니다.</p>
+				</div>
+				<ul class="check">
+					<li class="{$display_is_sms|display}">SMS 수신동의
+						{$form.is_sms}
+					</li>
+					<li class="{$display_is_news_mail|display}">E-MAIL 수신동의
+						{$form.is_news_mail}
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+
+	</div>
+    <div class="btnJoin">
+        <a href="#none" class="hvr-bob" onclick="{$action_func_join}">
+			
+			가입하기<i class="xi-angle-right-min"></i>
+		</a>
+    </div>
+
+    <!-- 회원 가입 정보 확인 레이어 -->
+    <!--@import(/member/join_confirm.html)-->

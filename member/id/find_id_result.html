@@ -1,0 +1,29 @@
+<!--@css(/layout/basic/css/common.css)-->
+<!--@css(/_onedesign/css/basic.css)-->
+<!--@css(/_onedesign/css/hover.css)-->
+<!--@css(/_onedesign/css/searchidpw.css)-->
+
+
+<div module="member_findidresult">
+    <div class="findId">
+        <h3>아이디 찾기 결과</h3>
+		<p class="copy">
+			고객님의 아이디 찾기가 성공적으로 이루어졌습니다.
+        </p>
+        <div class="ec-base-box typeMember gMessage">
+            <p class="message">가입된 아이디가 총 <span class="txtEm">{$idCnt}</span>개 있습니다.</p>
+            <div class="information">
+                <div class="description">
+                    <ul class="ec-base-desc gSmall">
+                        <li><strong class="desc">{$name} ({$searchInfo})</strong></li>
+                        <li style="padding-top:30px;">{$searchIds}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <p>
+            <a href="/member/login.html" target="_top" class="btn_07 hvr-sweep-to-right">로그인</a>
+        </p>
+    </div>
+</div>

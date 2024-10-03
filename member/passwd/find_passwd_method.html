@@ -1,0 +1,25 @@
+<!--@css(/layout/basic/css/common.css)-->
+<!--@css(/_onedesign/css/basic.css)-->
+<!--@css(/_onedesign/css/hover.css)-->
+<!--@css(/_onedesign/css/searchidpw.css)-->
+
+
+<div module="member_findpasswdmethod">
+    <!--
+        $nextURL = /member/passwd/find_passwd_result.html
+     -->
+    <div class="inner">
+
+        <fieldset>
+            <legend>임시 비밀번호 전송</legend>
+           
+                <div>발송받으실 유형 선택<Br><span class="desc">{$form.passwd_method_type}</span></div>
+                <div id="{$passwd_method_email_info}" style="margin-top:20px;"><strong class="term" style="margin-right:5px;">이메일</strong><span class="desc"><strong class="txtEm">{$passwd_method_email}</strong></span></div>
+                <div id="{$passwd_method_mobile_info}" style="margin-top:20px;"><strong class="term" style="margin-right:5px;">휴대폰 번호</strong><span class="desc"><strong class="txtEm number">{$passwd_method_mobile}</strong></span></div>
+            
+            <p >
+                <a href="#none" onclick="{$action_func_find_passwd_send}" class="btn_07 hvr-sweep-to-right">임시 비밀번호 발송</a>
+            </p>
+        </fieldset>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<!--@css(/layout/basic/css/common.css)-->
+<!--@css(/_onedesign/css/basic.css)-->
+<!--@css(/_onedesign/css/hover.css)-->
+<!--@css(/_onedesign/css/searchidpw.css)-->
+
+
+<div module="member_findpasswdresult">
+    <div class="findPw">
+        <div class="desc">
+            <p class="{$display_email_method|display}">임시 비밀번호가 고객님 메일로 전송되었습니다.</p>
+            <p class="{$display_mobile_method|display}">임시 비밀번호가<br /> 고객님 휴대폰 번호로 전송되었습니다.</p>
+        </div>
+        <div class="ec-base-box typeMember gMessage">
+            <div class="information">
+                <p class="description">
+                    <span class="{$display_id_method|display}"><strong class="txtEm">{$id}</strong> 회원님, </span>임시 비밀번호를<br />
+                    <strong class="txtEm"><span class="{$display_email_method|display}">{$email}</span><span class="{$display_mobile_method|display}">{$mobile}</span></strong>으로 보내드렸습니다
+                </p>
+            </div>
+        </div>
+        
+         <p>
+            <a href="/member/login.html" target="_top" class="btn_07 hvr-sweep-to-right">로그인</a>
+        </p>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+a.xans-search-form { margin:0 0 20px; }
+
+/* .searchbox */
+.xans-search-form .searchbox {background:#f8f8f8; text-align:center; margin-bottom:30px; padding:30px 0;}
+.xans-search-form .searchbox fieldset{display:inline-block; text-align:left;}
+.xans-search-form .searchbox .item {font-size:12px; line-height:22px; margin-bottom:6px;}
+.xans-search-form .searchbox .item strong { float:left; font-weight:normal; width:60px; padding-right:10px;}
+.xans-search-form .searchbox .item select{height:24px; padding-left:5px; box-sizing:border-box;}
+.xans-search-form .searchbox input {height:24px; box-sizing:border-box; padding-left:5px; border:1px solid #ececec; font-size:13px;}
+
+.xans-search-form .searchbox .popular { margin:0 0 0 78px; font-size:12px; line-height:36px; *zoom:1; display:none !important;}
+.xans-search-form .searchbox .popular.xans-search-hotkeyword { margin-top:8px; margin-bottom:10px; }
+.xans-search-form .searchbox .popular:after { content:""; display:block; clear:both; }
+.xans-search-form .searchbox .popular strong { float:left; width:64px;  color:#555; text-align:left; font-weight:normal;}
+.xans-search-form .searchbox .popular p{font-size:0; line-height:0;}
+.xans-search-form .searchbox .popular p a {display:inline-block; margin-right:7px; background:#ececec; border-radius:7px;padding:4px 10px; font-size:12px; line-height:22px;}
+
+.xans-search-form .searchbox .button { margin-top:15px; text-align:center;}
+.xans-search-form .searchbox .button button{ font-size:13px;}
+.xans-search-form .noData { padding:30px 0; text-align:center; line-height:20px; font-size:12px; }
+.xans-search-form .noData > strong { font-weight:normal; display:block; color:#777; }
+.xans-search-form .noData > strong.warning { display:block; color:#444; }
+.xans-search-form .noData ul { margin:10px 0 0; display:none;}
+
+/* Input Size */
+.xans-search-form .searchbox #category_no,
+.xans-search-form .searchbox #order_by { width:319px; }
+.xans-search-form .searchbox #search_type { width:85px; }
+.xans-search-form .searchbox #keyword { width:231px; }
+.xans-search-form .searchbox #exceptkeyword { width:247px; }
+.xans-search-form .searchbox #product_price1 { width:153px; }
+.xans-search-form .searchbox #product_price2 { width:153px; }
+
+
+
+
+
+
+/* searchResult */
+.xans-search-form .searchResult {position:relative;text-align:right;line-height:40px;padding:9px 27px;box-sizing:border-box;background:#f5f5f5;height:59px;}
+.xans-search-form .searchResult:after{content:"";display:block;clear:both;}
+
+.xans-search-form .searchResult .record {float:left;padding:0 0 0 8px;color:#777777;font-size:13px;line-height:40px;letter-spacing:0.8px;}
+.xans-search-form .searchResult .record strong{display:inline-block;line-height:40px;font-size:20px;padding-right:7px;color:#5d5d5d;}
+
+.xans-search-form .searchResult .listType{position:absolute;right:11px;top:11px;width:138px;background:#fff;height:35px;line-height:35px;z-index:2;}
+.xans-search-form .searchResult .listType ul{height:35px;overflow:hidden;border:1px solid #e0e0e0;background:#fff;}
+.xans-search-form .searchResult .listType i{position:absolute; right:12px; top:10px;}
+.xans-search-form .searchResult .listType li{display:block; text-align:left; padding:0 17px;}
+.xans-search-form .searchResult .listType li a{font-size:13px;color:#666;font-family:Noto Sans Korean;font-weight:normal !important;}
+
+/*활성화됬을때 */
+.xans-search-form .searchResult .listType:hover ul{background:#fff;height:210px;}
+.xans-search-form .searchResult .listType:hover ul li:hover{background:#f8f8f8;cursor:pointer;	}
+.xans-search-form .searchResult .listType:hover ul li:hover a{color:#333;font-weight:normal;}

@@ -1,0 +1,165 @@
+/* 공통 */
+.ec-base-product {  }
+.ec-base-product .title { display:block; margin:30px 0; }
+.ec-base-product .title h2 {     
+    font-weight: 100;
+    font-size: 26px;
+    color: #000000;
+    text-align: left;}
+.ec-base-product .title h3 {  font-weight:100; font-size:20px; color:#535353; text-align:left; }
+.ec-base-product .prdList .title { display:none;}
+
+
+.ec-base-product img { vertical-align:middle; }
+.ec-base-product a[href^='/product/detail.html'] > img { border:1px solid #ececec; }
+.ec-base-product .prdList { display:table; width:100%; font-size:0; line-height:0; letter-spacing:0; margin-top:30px;}
+.ec-base-product .prdList > li { position:relative; display:inline-block; *display:inline; *zoom:1; vertical-align:top; padding-bottom:60px;cursor:pointer;}
+
+
+/* 진열방식 */
+.ec-base-product ul.grid2 > li { width:49%; margin-right:2%; }
+.ec-base-product ul.grid3 > li { width:32%; margin-right:2%; }
+.ec-base-product ul.grid4 > li { width:23.5%; margin-right:2%; }
+.ec-base-product ul.grid5 > li { width:18.8%; margin-right:1.5%; }
+.ec-base-product ul.grid6 > li { width:15%; margin-right:2%;}
+
+.ec-base-product ul.grid2 > li:nth-child(2n){margin-right:0;}
+.ec-base-product ul.grid3 > li:nth-child(3n){margin-right:0;}
+.ec-base-product ul.grid4 > li:nth-child(4n){margin-right:0;}
+.ec-base-product ul.grid5 > li:nth-child(5n){margin-right:0;}
+.ec-base-product ul.grid6 > li:nth-child(6n){margin-right:0;}
+
+
+
+/* 썸네일 */
+.ec-base-product .prdList .thumbnail { position:relative; margin:0 auto 15px; text-align:center;}
+.ec-base-product .prdList .thumbnail .prdImg{overflow:hidden;}
+.ec-base-product .prdList .thumbnail .prdImg > a > img { width:100%; margin:0 auto; }
+.ec-base-product .prdList .thumbnail .chk { display:inline-block; position:absolute; left:6%; top:9%;}
+.ec-base-product .prdList .thumbnail .chk input{width:16px; height:16px;}
+.ec-base-product .prdList .thumbnail .prdIcon { position:absolute; top:0; left:0; width:100%; height:100%; background-repeat:no-repeat; }
+
+/* 썸네일 내 아이콘 */
+.ec-base-product .prdList .thumbnail .button {    position: absolute;bottom: 5%;left: 6%;width: 88%;height: 60px;border-radius: 4px;line-height: 0;font-size: 0;background: rgba(0, 0, 0, 0.6);opacity: 0;transition: 0.1s ease-in-out;}
+.ec-base-product .prdList .thumbnail .btn_thumb{position:relative; display:inline-block; vertical-align:top; width:25%; height:100%; text-align:center; box-sizing:border-box; z-index:1; cursor:pointer; opacity:0.7; transition: 0.2s ease-in-out; border-right:1px solid rgba(255,255,255,0.15);}
+.ec-base-product .prdList .thumbnail .btn_thumb.wid3{width:33.33%;}
+.ec-base-product .prdList .thumbnail .btn_thumb.wid2{width:50%;}
+.ec-base-product .prdList .thumbnail .btn_thumb img{padding:11px 30px 31px;}
+.ec-base-product .prdList .thumbnail .btn_thumb span{    position: absolute;top: 26px;left: 0;width: 100%;display: block;font-size: 14px;color: #efefef;line-height: 28px;font-weight: 300;letter-spacing: 0.6px;z-index: -1;}
+.ec-base-product .prdList .thumbnail .btn_thumb:last-child{border-right:none;}
+
+.ec-base-product .prdList .thumbnail .button .basket{}
+.ec-base-product .prdList .thumbnail .button .wish{}
+.ec-base-product .prdList .thumbnail .button .zoom{}
+.ec-base-product .prdList .thumbnail .button .option{position:relative;}
+
+
+/* 그리드갯수, 브라우저크기에따른 아이콘영역변경 */
+.ec-base-product .prdList.grid5 .thumbnail .btn_thumb img{padding:13px 18px;}
+
+.ec-base-product .prdList.grid6 .thumbnail .button{height:40px;}
+.ec-base-product .prdList.grid6 .thumbnail .btn_thumb img{padding:13px 18px;}
+.ec-base-product .prdList.grid6 .thumbnail .btn_thumb span{display:none;}	
+
+@media screen and (max-width:1650px){
+	.ec-base-product .prdList.grid4 .thumbnail .btn_thumb img{padding:13px 18px;}
+	.ec-base-product .prdList.grid6 .thumbnail .btn_thumb img{padding:13px 7px;}
+
+	.ec-base-product .prdList.grid5 .thumbnail .button{height:40px;}
+	.ec-base-product .prdList.grid5 .thumbnail .btn_thumb img{padding:13px;}
+	.ec-base-product .prdList.grid5 .thumbnail .btn_thumb span{display:none;}	
+}
+@media screen and (max-width:1300px){
+	.ec-base-product .prdList .thumbnail .button{height:40px;}
+	.ec-base-product .prdList .thumbnail .btn_thumb img{padding:13px 18px;}
+	.ec-base-product .prdList .thumbnail .btn_thumb span{display:none;}	
+}
+
+
+/* 좋아요버튼 */
+.ec-base-product .prdList .thumbnail .likeButton{position:absolute; top:5%; right:6%; opacity:0; transition: 0.2s ease-in-out; background: rgba(20,20,20,0.4); border-radius:4px; padding:6px 10px 9px 10px;}
+.ec-base-product .prdList .thumbnail .likeButton button{display:block; background:transparent; opacity:0.7; transition: 0.2s ease-in-out;}
+.ec-base-product .prdList .thumbnail .likeButton button img{display:inline-block; vertical-align:text-bottom;}
+.ec-base-product .prdList .thumbnail .likeButton strong{display:inline-block; vertical-align:text-bottom; font-size:12px; line-height:12px; font-weight:400; color:#efefef; margin:0 0 0 2px; font-family:AppleGothic;}
+
+/* 호버 */
+.ec-base-product .prdList > li:hover .button,
+.ec-base-product .prdList > li:hover .likeButton{opacity:1;}
+
+.ec-base-product .prdList > li:hover .button{bottom:6%;}
+.ec-base-product .prdList > li:hover .likeButton{top:7%}
+
+.ec-base-product .prdList .thumbnail .btn_thumb:hover{opacity:1;}
+.ec-base-product .prdList .thumbnail .likeButton:hover button{opacity:1;}
+
+
+
+/*상품정보*/
+.ec-base-product .prdList .description {text-align:left; padding:0; line-height:20px; position:relative;}
+.ec-base-product .prdList .description .name{    display: block;padding-bottom: 12px;border-bottom: 1px solid #ececec;margin-bottom: 12px;font-weight: 400;line-height: 40px;text-align: center;}
+.ec-base-product .prdList .description .name a span {font-weight:300 !important;font-family:montserrat,noto sans kr;}
+.ec-base-product .prdList .description .mileage { display:block; }
+.ec-base-product .prdList .description span.grid { display:block; }
+
+/* module="product_ListItem" */
+.ec-base-product .spec { margin:0; text-align:center;}
+.ec-base-product .spec li { display:block !important; text-align:center; font-weight:400;}
+.ec-base-product .spec li.subName { padding-bottom: 8px;}
+.ec-base-product .spec li.customPrice,
+.ec-base-product .spec li.price {display:inline-block !important;padding:0 3px;font-family:montserrat !important;}
+.ec-base-product .spec li.customPrice {padding-right:5px;}
+.ec-base-product .spec li .title { font-weight:normal; vertical-align:top; }
+.ec-base-product .spec li .title span { vertical-align:top; }
+
+.ec-base-product .spec li.colorchip{position:absolute; top:4px; right:0;}
+.ec-base-product .spec li .color { overflow:hidden; display:inline-block;}
+.ec-base-product .spec li .chips { float: left;width: 7px;height: 7px;border-radius: 100%;margin: 0 0 0 5px;border: 0px solid #ccc;box-sizing: border-box;}
+.ec-base-product .spec li .chips.white{border-width:1px;}
+
+/*아이콘*/
+.ec-base-product .prdList .description .icon { vertical-align:middle; margin:8px 0 0; }
+.ec-base-product .prdList .description .icon img{ margin-right:1px; display:inline-block;}
+.ec-base-product .prdList .description .icon:after { content:""; display:block; clear:both; }
+.ec-base-product .prdList .description .promotion { text-align:left; }
+.ec-base-product .prdList .description .mileage { display:block; }
+.ec-base-product .prdList .description span.grid { display:block; }
+
+/* 할인기간 레이어 */
+.ec-base-product .discountPeriod { display:inline-block; z-index:10; position:relative; width:55px; height:19px; vertical-align:middle; }
+.ec-base-product .layerDiscountPeriod { left:50%; top:26px; width:247px; margin:0 0 0 -124px; }
+.ec-base-product .layerDiscountPeriod strong.title { display:block; margin:0 0 12px; padding:0 35px 0 0; font-weight:600; color:#535353; }
+.ec-base-product .layerDiscountPeriod .content p { margin:2px 0 0; font-size:11px; line-height:16px; color:#757575; letter-spacing:-1px; }
+.ec-base-product .layerDiscountPeriod .content p strong { font-weight:normal; font-size:12px; color:#535353; }
+.ec-base-product .layerDiscountPeriod .content p strong span { font-size:11px; }
+
+/* 배송비레이어 */
+.ec-base-product .prdList .shippingFee { position:relative; display:inline-block; }
+.ec-base-product .prdList .shippingFee .button { display:inline-block; float:none; }
+.ec-base-product .prdList .shippingFee .ec-base-tooltip { z-index:11; display:block; margin:0 0 0 -170px; width:360px; }
+.ec-base-product .prdList .shippingFee .ec-base-tooltip table th { width:40px; }
+.ec-base-product .prdList .shippingFee .ec-base-tooltip table th,
+.ec-base-product .prdList .shippingFee .ec-base-tooltip table td { padding:7px 10px 8px 10px; }
+
+/* 배송비 차등부과 레이어 */
+.ec-base-product .btnTooltip { position:relative; display:inline-block; }
+.differentialShipping { display:none; overflow:hidden; position:absolute; left:50%; top:17px; z-index:100; width:350px; margin:0 0 0 -176px; }
+.differentialShipping h3.title { margin:0; height:35px; padding:0 35px 0 19px; border:0; color:#fff; font-size:14px; line-height:35px; background:#495164; }
+.differentialShipping .content { padding:12px 18px 14px 18px; border:1px solid #757575; border-top:0; text-align:center; background:#fff; }
+.differentialShipping .close { position:absolute; right:14px; top:12px; }
+.differentialShipping .close img { cursor:pointer; }
+.differentialShipping .content ul { color:#757575; line-height:25px; }
+.differentialShipping .content li { overflow:hidden; }
+.differentialShipping .content li strong { float:left; font-weight:normal; }
+.differentialShipping .content li span { float:right; color:#535353; }
+.differentialShipping .content .info { margin:7px 0 0; padding:7px 0 0; border-top:1px dotted #b0b1b3; color:#80aeef; text-align:right; }
+
+/* 썸네일 아이콘 위치 */
+.ec-product-bgLT { background-position:left top; }
+.ec-product-bgLC { background-position:left center; }
+.ec-product-bgLB { background-position:left bottom; }
+.ec-product-bgRT { background-position:right top; }
+.ec-product-bgRC { background-position:right center; }
+.ec-product-bgRB { background-position:right bottom; }
+.ec-product-bgCT { background-position:center top; }
+.ec-product-bgCC { background-position:center center; }
+.ec-product-bgCB { background-position:center bottom; }

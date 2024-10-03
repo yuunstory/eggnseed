@@ -1,0 +1,32 @@
+<!--@css(/layout/basic/css/common.css)-->
+<!--@css(/_onedesign/css/basic.css)-->
+<!--@css(/_onedesign/css/hover.css)-->
+<!--@css(/_onedesign/css/searchidpw.css)-->
+
+<div module="member_passwordverification">
+    <div class="inner">
+        <h3>본인 확인 인증</h3>
+        <fieldset>
+            <legend>비밀번호 찾기 본인확인 인증</legend>
+            <ul class="ec-base-desc typeBullet gSmall">
+                <li><span class="desc">{$form.user_verification_method_type}</span></li>
+                <li id="{$user_verification_email_info}"><span class="desc"><strong class="txtEm">{$user_verification_email}</strong> <a href="#none" class="gIndent10 btn_white btn_05" onclick="{$action_func_user_verification}">인증번호발송</a></span></li>
+                <li id="{$user_verification_mobile_info}"><span class="desc"><strong class="txtEm number">{$user_verification_mobile}</strong> <a href="#none" class="gIndent10 btn_white btn_05" onclick="{$action_func_user_verification}">인증번호발송</a></span></li>
+                <li>
+                   
+                    <div class="desc">{$form.verification_code}
+                        <div class="txtInfo">
+                            <p id="{$user_verification_email_desc}" class="{$display_user_verification_email_desc|display}">1회 발송된 인증번호의 유효 시간은 60분이며,<br /> 1회 인증번호 발송 후 30초 이후에 재전송이 가능합니다.</p>
+                            <p id="{$user_verification_mobile_desc}" class="{$display_user_verification_mobile_desc|display}">1회 발송된 인증번호의 유효 시간은 3분이며,<br /> 1회 인증번호 발송 후 30초 이후에 재전송이 가능합니다.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+			<p>
+				<a onclick="{$action_func_user_verification_submit}"class="btn_07 hvr-sweep-to-right">
+					확인
+				</a>
+			</p>
+        </fieldset>
+    </div>
+</div>

@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+/* 게시판 메인 */
+.boardMain {
+  overflow: hidden;
+  *zoom: 1;
+}
+.boardMain td img {
+  vertical-align: middle;
+  margin: 1px;
+}
+.boardMain .board {
+  position: relative;
+  margin: 0 0 65px;
+}
+.boardMain .leftArea {
+  float: left;
+  width: 50%;
+}
+.boardMain .leftArea .board {
+  margin: 0 23px 65px 0;
+}
+.boardMain .rightArea {
+  float: right;
+  width: 50%;
+}
+.boardMain .rightArea .board {
+  margin: 0 0 65px 23px;
+}
+.boardMain .board h3 {
+  margin: 0 0 13px;
+  height: 28px;
+  font-size: 16px;
+  color: #827a70;
+  border-bottom: 2px solid #626672;
+}
+.boardMain .board .more {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2px;
+}
+.boardMain .board .ec-base-table.typeList td {
+  color: #a4a4a4;
+}
+.boardMain .board .ec-base-table.typeList td.title a,
+.boardMain .board .ec-base-table.typeList td.title a:hover {
+  color: #4f4f4f;
+}
+.boardMain .board .galleryList {
+  overflow: hidden;
+}
+.boardMain .board .galleryList ul {
+  overflow: hidden;
+  margin: 0 -10px;
+}
+.boardMain .board .galleryList li {
+  float: left;
+  position: relative;
+  width: 20%;
+  padding: 0 0 12px 0;
+  word-break: break-all;
+}
+.boardMain .board .galleryList li span {
+  display: block;
+  margin: 0 10px;
+  font-size: 11px;
+  color: #a4a4a4;
+}
+.boardMain .board .galleryList li .imgLink,
+.boardMain .board .galleryList li .imgLink:hover {
+  display: block;
+  margin: 0 10px 5px;
+  font-size: 16px;
+}
+.boardMain .board .galleryList li .imgLink img {
+  width: 100%;
+  max-height: 110px;
+  border: 1px solid #ededed;
+}
+
+/* 퀵뷰 모달 */
+#modalBackpanel {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  width: 100%;
+  height: 100%;
+  background: #444;
+}
+#modalContainer {
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  z-index: 10001;
+  width: 700px;
+  height: 700px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.06);
+}
+#modalContainer #modalContent {
+  width: 100%;
+  height: 100%;
+}
+
+/* 
+#layout .category > ul.top-menu .menu01:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 27px;
+    height: 27px;
+    background: url(/SkinImg/s_02.png) no-repeat center;
+   	margin-top:-3px;
+    margin-right: -13px;
+    background-size:100%;
+}
+
+#layout .category > ul.top-menu .menu02:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 27px;
+    height: 27px;
+    background: url(/SkinImg/s_01.png) no-repeat center;
+   	margin-top:-3px;
+    margin-right: -13px;
+    background-size:100%;
+}
+
+#layout .category > ul.top-menu .menu03:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 27px;
+    height: 27px;
+    background: url(/SkinImg/s_03.png) no-repeat center;
+   	margin-top:-3px;
+    margin-right: -13px;
+    background-size:100%;
+}
+
+#layout .category > ul.top-menu .menu04:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 27px;
+    height: 27px;
+    background: url(/SkinImg/s_04.png) no-repeat center;
+   	margin-top:-3px;
+    margin-right: -13px;
+    background-size:100%;
+}
+
+#layout .category > ul.top-menu .menu05:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 27px;
+    height: 27px;
+    background: url(/SkinImg/s_05.png) no-repeat center;
+   	margin-top:-3px;
+    margin-right: -13px;
+    background-size:100%;
+} */
+
+#header .category .sub-category > ul {
+  width: 100px;
+}
